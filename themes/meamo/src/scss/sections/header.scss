@@ -1,0 +1,13 @@
+.lang-selector {
+  display: flex;
+  text-transform: uppercase;
+  &__item {
+    &[data-current] {
+      font-weight: $bold_font_weight;
+    }
+    &:not(:last-of-type)::after {
+      content: '/';
+      margin: 0 5px;
+    }
+  }
+}

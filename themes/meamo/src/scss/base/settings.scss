@@ -1,0 +1,14 @@
+/*
+General settings
+*/
+
+* {
+  box-sizing:border-box;
+}
+
+body {
+  font-family: $font_default;
+  // color: $color1;
+  font-weight: $base_font_weight;
+  background-color: $base_color_background;
+}

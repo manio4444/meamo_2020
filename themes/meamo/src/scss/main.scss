@@ -1,3 +1,5 @@
-body {
-  font-size: 5px;
-}
+@import 'base/variables';
+@import 'base/settings';
+@import 'override/prestashop';
+
+@import 'sections/header';

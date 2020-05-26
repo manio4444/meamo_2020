@@ -61,10 +61,10 @@ global_settings:
       displayNav1:
         - ps_contactinfo
       displayNav2:
-        - ps_languageselector
         - ps_currencyselector
         - ps_customersignin
         - ps_shoppingcart
+        - ps_languageselector
       displayTop:
         - ps_mainmenu
         - ps_searchbar
