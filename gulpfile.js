@@ -36,6 +36,9 @@ const CONFIG = {
     SCSS: [
       `${THEME_FOLDER}/src/scss/**/*.scss`
     ],
+    TEMPLATES: [
+      `${THEME_FOLDER}/templates/**/*.tpl`
+    ],
     THEME: [
       `${THEME_FOLDER}/**/*`
     ]
@@ -47,7 +50,7 @@ const StylesTaskDev = done => {
   gulp.src([...CONFIG.SRC.CSS, ...CONFIG.SRC.SCSS])
   .pipe(sourcemaps.init())
   .pipe(sass())
-  // .on('error', swallowError)
+  .on('error', swallowError)
   .pipe(concat(CONFIG.DIST.FILENAME_STYLES))
   // .pipe(autoprefixer({browsers: ['last 2 versions', '> 1% in PL', 'ie >=10']}))
   .pipe(cleanCSS())
@@ -62,11 +65,17 @@ const deployToXamppMac = done => {
     done();
 };
 
-function watchers() {
+const watchers = () => {
   gulp.watch(CONFIG.WATCHERS.SCSS, gulp.series(StylesTaskDev, deployToXamppMac));
   // gulp.watch(config.src.css, series(StylesTask, reload));
   // gulp.watch(config.src.js, series(JsTask, reload));
-  // gulp.watch(CONFIG.WATCHERS.THEME, deployToXamppMac);
+  gulp.watch(CONFIG.WATCHERS.TEMPLATES, deployToXamppMac);
+}
+
+function swallowError (error) {
+  // If you want details of the error in the console
+  console.log(error.toString());
+  this.emit('end')
 }
 
 exports.default = gulp.parallel(
