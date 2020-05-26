@@ -37,7 +37,8 @@ const CONFIG = {
       `${THEME_FOLDER}/src/scss/**/*.scss`
     ],
     TEMPLATES: [
-      `${THEME_FOLDER}/templates/**/*.tpl`
+      `${THEME_FOLDER}/templates/**/*.tpl`,
+      `${THEME_FOLDER}/modules/**/*.tpl`
     ],
     THEME: [
       `${THEME_FOLDER}/**/*`
