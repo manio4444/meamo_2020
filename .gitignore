@@ -1,3 +1,7 @@
+# Assets build files
+themes/meamo/assets/css/meamo.min.css
+themes/meamo/assets/js/meamo.min.js
+
 # WebStorm
 /.idea
 
