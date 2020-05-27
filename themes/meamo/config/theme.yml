@@ -59,7 +59,13 @@ global_settings:
   hooks:
     modules_to_hook:
       displayNav1:
-        - ps_contactinfo
+        - ps_mainmenu
+        - ps_searchbar
+        - ps_customersignin
+        - ps_currencyselector
+        - ps_shoppingcart
+        # - ps_wishlist TODO:
+        - ps_languageselector
       displayNav2:
         - ps_currencyselector
         - ps_customersignin

@@ -1,7 +1,23 @@
+.header-navigation {
+  text-transform: uppercase;
+  &__container {
+    display: flex;
+  }
+}
+
+.header-logo {
+
+}
+
+.shopping-cart {
+  a {
+    display: flex;
+  }
+}
+
 .currency-selector,
 .lang-selector {
   display: flex;
-  text-transform: uppercase;
   &__item {
     &[data-current] {
       font-weight: $bold_font_weight;
