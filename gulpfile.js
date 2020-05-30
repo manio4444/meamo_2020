@@ -5,13 +5,13 @@ const sass = require('gulp-sass');
 // const uglify = require('gulp-uglify');
 const cleanCSS = require('gulp-clean-css');
 // const browserSync = require('browser-sync').create();
+require('dotenv').config()
 
 const PROJECT_NAME = 'meamo_2020';
 const THEME_FOLDER = './themes/meamo';
 const THEME_ASSETS = `${THEME_FOLDER}/**/*`;
 
-const HTDOCS_MAC = '/Users/marcin.kalinowski/.bitnami/stackman/machines/xampp/volumes/root/htdocs/';
-const THEME_DEPLOY_PATH = `${HTDOCS_MAC}/${PROJECT_NAME}/${THEME_FOLDER}`;
+const THEME_DEPLOY_PATH = `${process.env.HTDOCS_DEPLOYMENT_PATH}/${PROJECT_NAME}/${THEME_FOLDER}`;
 
 const CONFIG = {
   SRC: {
@@ -67,6 +67,9 @@ const deployToXamppMac = done => {
 };
 
 const watchers = () => {
+  console.log('-------------------------------');
+  console.log('| THEME_DEPLOY_PATH: ', THEME_DEPLOY_PATH);
+  console.log('-------------------------------');
   gulp.watch(CONFIG.WATCHERS.SCSS, gulp.series(StylesTaskDev, deployToXamppMac));
   // gulp.watch(config.src.css, series(StylesTask, reload));
   // gulp.watch(config.src.js, series(JsTask, reload));
