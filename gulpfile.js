@@ -4,7 +4,7 @@ const sourcemaps = require('gulp-sourcemaps');
 const sass = require('gulp-sass');
 // const uglify = require('gulp-uglify');
 const cleanCSS = require('gulp-clean-css');
-// const browserSync = require('browser-sync').create();
+const browserSync = require('browser-sync').create();
 require('dotenv').config()
 
 const PROJECT_NAME = 'meamo_2020';
@@ -12,6 +12,7 @@ const THEME_FOLDER = './themes/meamo';
 const THEME_ASSETS = `${THEME_FOLDER}/**/*`;
 
 const THEME_DEPLOY_PATH = `${process.env.HTDOCS_DEPLOYMENT_PATH}/${PROJECT_NAME}/${THEME_FOLDER}`;
+const BROWSERSYNC_URL = process.env.BROWSERSYNC_URL;
 
 const CONFIG = {
   SRC: {
@@ -60,9 +61,12 @@ const StylesTaskDev = done => {
   done();
 }
 
-const deployToXamppMac = done => {
+const deployToHtdocs = done => {
     gulp.src(CONFIG.SRC.THEME)
-    .pipe(gulp.dest(THEME_DEPLOY_PATH))
+    .pipe(gulp.dest(THEME_DEPLOY_PATH));
+
+    browserSync.reload();
+
     done();
 };
 
@@ -70,10 +74,17 @@ const watchers = () => {
   console.log('-------------------------------');
   console.log('| THEME_DEPLOY_PATH: ', THEME_DEPLOY_PATH);
   console.log('-------------------------------');
-  gulp.watch(CONFIG.WATCHERS.SCSS, gulp.series(StylesTaskDev, deployToXamppMac));
+  gulp.watch(CONFIG.WATCHERS.SCSS, gulp.series(StylesTaskDev, deployToHtdocs));
   // gulp.watch(config.src.css, series(StylesTask, reload));
   // gulp.watch(config.src.js, series(JsTask, reload));
-  gulp.watch(CONFIG.WATCHERS.TEMPLATES, deployToXamppMac);
+  gulp.watch(CONFIG.WATCHERS.TEMPLATES, deployToHtdocs);
+}
+
+const liveReload = done => {
+  browserSync.init({
+    proxy: BROWSERSYNC_URL
+  });
+  done();
 }
 
 function swallowError (error) {
@@ -85,7 +96,7 @@ function swallowError (error) {
 exports.default = gulp.parallel(
   StylesTaskDev,
   // JsTask,
-  deployToXamppMac,
+  deployToHtdocs,
   watchers,
-  // liveReload
+  liveReload
 );

@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.php",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "gulp"
   },
   "repository": {
     "type": "git",
@@ -17,14 +17,12 @@
   },
   "homepage": "https://github.com/manio4444/meamo_2020#readme",
   "dependencies": {
+    "browser-sync": "^2.26.7",
     "dotenv": "^8.2.0",
     "gulp": "^4.0.2",
     "gulp-clean-css": "^4.3.0",
     "gulp-concat": "^2.6.1",
     "gulp-sass": "^4.1.0",
     "gulp-sourcemaps": "^2.6.5"
-  },
-  "scripts": {
-    "start": "gulp"
   }
 }
