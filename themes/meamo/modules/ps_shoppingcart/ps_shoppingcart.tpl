@@ -1,4 +1,4 @@
-<div id="_desktop_cart" class="shopping-cart">
+<div id="_desktop_cart" class="shopping-cart header-navigation__right-item">
   <div class="blockcart cart-preview {if $cart.products_count > 0}active{else}inactive{/if}" data-refresh-url="{$refresh_url}">
     <div class="header">
       {if $cart.products_count > 0}{/if}

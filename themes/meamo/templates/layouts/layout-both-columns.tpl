@@ -37,12 +37,12 @@
       {hook h='displayAfterBodyOpeningTag'}
     {/block}
 
-    <main>
+    <div class="meamo-page-wrapper">
       {block name='product_activation'}
         {include file='catalog/_partials/product-activation.tpl'}
       {/block}
 
-      <header id="header" class="header-navigation">
+      <header class="header-navigation">
         {block name='header'}
           {include file='_partials/header.tpl'}
         {/block}
@@ -52,7 +52,7 @@
         {include file='_partials/notifications.tpl'}
       {/block}
 
-      <section id="wrapper">
+      <main class="meamo-content-wrapper">
         {hook h="displayWrapperTop"}
         <div class="container">
           {block name='breadcrumb'}
@@ -90,7 +90,7 @@
           {/block}
         </div>
         {hook h="displayWrapperBottom"}
-      </section>
+      </main>
 
       <footer id="footer">
         {block name="footer"}
@@ -98,7 +98,7 @@
         {/block}
       </footer>
 
-    </main>
+    </div>
 
     {block name='javascript_bottom'}
       {include file="_partials/javascript.tpl" javascript=$javascript.bottom}

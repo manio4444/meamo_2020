@@ -31,3 +31,5 @@
     {$stylesheet.content}
   </style>
 {/foreach}
+
+<link href="https://fonts.googleapis.com/css?family=Lato:300,400,500&amp;subset=latin-ext" rel="stylesheet">

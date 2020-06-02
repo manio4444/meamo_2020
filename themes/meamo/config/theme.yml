@@ -60,8 +60,8 @@ global_settings:
     modules_to_hook:
       displayNav1:
         - ps_mainmenu
-        - ps_searchbar
         - ps_customersignin
+        - ps_searchbar
         - ps_currencyselector
         - ps_shoppingcart
         # - ps_wishlist TODO:

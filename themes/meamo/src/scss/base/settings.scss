@@ -12,3 +12,10 @@ body {
   font-weight: $base_font_weight;
   background-color: $base_color_background;
 }
+
+a {
+  color: inherit;
+  &:hover {
+    color: $hover_link;
+  }
+}

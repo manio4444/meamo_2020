@@ -51,6 +51,11 @@
           {/block}
         </p>
       </div>
+      <div class="row">
+        <div class="col-md-12">
+          <img class="logo img-responsive" src="{$shop.logo}" alt="{$shop.name}">
+        </div>
+      </div>
     </div>
   </div>
 </div>

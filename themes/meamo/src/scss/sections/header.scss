@@ -2,11 +2,38 @@
   text-transform: uppercase;
   &__container {
     display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 345px;
+    font-size: 16px;
+    padding: 0 50px;
+  }
+  &__right-item {
+    &:not(:last-child) {
+      margin-right: 40px;
+    }
   }
 }
 
 .header-logo {
+  max-height: 182px;
+  padding: 0 50px;
+}
 
+.header-mainmenu {
+  flex-grow: 1;
+  & > ul {
+    display: flex;
+    margin: 0;
+  }
+  &__element {
+    &:not(:last-child) {
+      margin-right: 40px;
+    }
+    &.current {
+      font-weight: $bold_font_weight;
+    }
+  }
 }
 
 .shopping-cart {
