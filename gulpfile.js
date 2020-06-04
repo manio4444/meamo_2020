@@ -2,7 +2,7 @@ const gulp = require('gulp');
 const concat = require('gulp-concat');
 const sourcemaps = require('gulp-sourcemaps');
 const sass = require('gulp-sass');
-// const uglify = require('gulp-uglify');
+const uglify = require('gulp-uglify');
 const cleanCSS = require('gulp-clean-css');
 const browserSync = require('browser-sync').create();
 require('dotenv').config()
@@ -17,7 +17,7 @@ const BROWSERSYNC_URL = process.env.BROWSERSYNC_URL;
 const CONFIG = {
   SRC: {
     JS: [
-      // './src/js/*.js',
+      `${THEME_FOLDER}/src/js/main.js`
     ],
     SCSS: [
       `${THEME_FOLDER}/src/scss/main.scss`
@@ -36,6 +36,9 @@ const CONFIG = {
   WATCHERS: {
     SCSS: [
       `${THEME_FOLDER}/src/scss/**/*.scss`
+    ],
+    JS: [
+      `${THEME_FOLDER}/src/js/**/*.js`
     ],
     TEMPLATES: [
       `${THEME_FOLDER}/templates/**/*.tpl`,
@@ -61,6 +64,16 @@ const StylesTaskDev = done => {
   done();
 }
 
+const JsTask = done => {
+  gulp.src([...CONFIG.SRC.JS])
+  .pipe(sourcemaps.init())
+  .pipe(concat(CONFIG.DIST.FILENAME_SCRIPTS))
+  .pipe(uglify())
+  .on('error', swallowError)
+  .pipe(gulp.dest(CONFIG.DIST.FOLDER_SCRIPTS));
+  done();
+}
+
 const deployToHtdocs = done => {
     gulp.src(CONFIG.SRC.THEME)
     .pipe(gulp.dest(THEME_DEPLOY_PATH));
@@ -75,8 +88,8 @@ const watchers = () => {
   console.log('| THEME_DEPLOY_PATH: ', THEME_DEPLOY_PATH);
   console.log('-------------------------------');
   gulp.watch(CONFIG.WATCHERS.SCSS, gulp.series(StylesTaskDev, deployToHtdocs));
-  // gulp.watch(config.src.css, series(StylesTask, reload));
-  // gulp.watch(config.src.js, series(JsTask, reload));
+  // gulp.watch(CONFIG.WATCHERS.CSS, gulp.series(StylesTask, deployToHtdocs));
+  gulp.watch(CONFIG.WATCHERS.JS, gulp.series(JsTask, deployToHtdocs));
   gulp.watch(CONFIG.WATCHERS.TEMPLATES, deployToHtdocs);
 }
 
@@ -95,7 +108,7 @@ function swallowError (error) {
 
 exports.default = gulp.parallel(
   StylesTaskDev,
-  // JsTask,
+  JsTask,
   deployToHtdocs,
   watchers,
   liveReload
