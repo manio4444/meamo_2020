@@ -1,9 +1,18 @@
 const gulp = require('gulp');
 const concat = require('gulp-concat');
+const rename = require('gulp-rename');
 const sourcemaps = require('gulp-sourcemaps');
+
 const sass = require('gulp-sass');
+
 const uglify = require('gulp-uglify');
+const rollup = require('gulp-better-rollup');
+const babel = require('rollup-plugin-babel');
+const resolve = require('rollup-plugin-node-resolve');
+const commonjs = require('rollup-plugin-commonjs');
+
 const cleanCSS = require('gulp-clean-css');
+
 const browserSync = require('browser-sync').create();
 require('dotenv').config()
 
@@ -17,7 +26,7 @@ const BROWSERSYNC_URL = process.env.BROWSERSYNC_URL;
 const CONFIG = {
   SRC: {
     JS: [
-      `${THEME_FOLDER}/src/js/main.js`
+      `${THEME_FOLDER}/src/js/app.js`
     ],
     SCSS: [
       `${THEME_FOLDER}/src/scss/main.scss`
@@ -67,7 +76,9 @@ const StylesTaskDev = done => {
 const JsTask = done => {
   gulp.src([...CONFIG.SRC.JS])
   .pipe(sourcemaps.init())
-  .pipe(concat(CONFIG.DIST.FILENAME_SCRIPTS))
+  // .pipe(concat(CONFIG.DIST.FILENAME_SCRIPTS))
+  .pipe(rollup({ plugins: [babel(), resolve(), commonjs()] }, 'umd'))
+  .pipe(rename(CONFIG.DIST.FILENAME_SCRIPTS))
   .pipe(uglify())
   .on('error', swallowError)
   .pipe(gulp.dest(CONFIG.DIST.FOLDER_SCRIPTS));
