@@ -1,3 +1,19 @@
+<div class="wishlist-icon header-navigation__right-item">
+  <div class="">
+    <div class="header">
+      <a rel="nofollow" href="">
+        <i class="material-icons favorite">favorite</i>
+        <span class="cart-products-count">(0)</span>
+      </a>
+    </div>
+  </div>
+</div>
+<!-- temp here up -->
+
+
+
+
+
 <div id="_desktop_cart" class="shopping-cart header-navigation__right-item">
   <div class="blockcart cart-preview {if $cart.products_count > 0}active{else}inactive{/if}" data-refresh-url="{$refresh_url}">
     <div class="header">
