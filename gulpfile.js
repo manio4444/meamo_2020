@@ -79,7 +79,7 @@ const JsTask = done => {
   // .pipe(concat(CONFIG.DIST.FILENAME_SCRIPTS))
   .pipe(rollup({ plugins: [babel(), resolve(), commonjs()] }, 'umd'))
   .pipe(rename(CONFIG.DIST.FILENAME_SCRIPTS))
-  .pipe(uglify())
+  // .pipe(uglify())
   .on('error', swallowError)
   .pipe(gulp.dest(CONFIG.DIST.FOLDER_SCRIPTS));
   done();
