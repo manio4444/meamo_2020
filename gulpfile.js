@@ -63,7 +63,9 @@ const StylesTaskDev = done => {
   // TODO: css vendors should be imported from node_modules
   gulp.src([...CONFIG.SRC.CSS, ...CONFIG.SRC.SCSS])
   .pipe(sourcemaps.init())
-  .pipe(sass())
+  .pipe(sass({
+    includePaths: ['node_modules'] // include directly in .scss
+  }))
   .on('error', swallowError)
   .pipe(concat(CONFIG.DIST.FILENAME_STYLES))
   // .pipe(autoprefixer({browsers: ['last 2 versions', '> 1% in PL', 'ie >=10']}))
