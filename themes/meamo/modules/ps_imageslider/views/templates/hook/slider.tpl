@@ -18,8 +18,10 @@
             <figure>
               {if $slide.title || $slide.description}
                 <figcaption class="caption">
-                  <h2 class="display-1 text-uppercase">{$slide.title}</h2>
-                  <div class="caption-description">{$slide.description nofilter}</div>
+                  <h2 class="home_slider__title">{$slide.title}</h2>
+                  <div class="home_slider__sub">{$slide.legend}</div>
+                  {* <div class="home_slider__txt">{$slide.description nofilter}</div> *}
+
                 </figcaption>
               {/if}
             </figure>

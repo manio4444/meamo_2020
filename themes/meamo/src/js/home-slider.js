@@ -26,6 +26,7 @@ $(document).ready(function() {
     dots: true,
     autoplay: true,
     autoplaySpeed: sliderToShow.attr('data-interval'),
+    rows: 0, // fix for not adding <div> wrapper inside slide's
     // infinite: false,
     // asNavFor: $('#section_realization .r_slider_sub'),
     // focusOnSelect: true,
