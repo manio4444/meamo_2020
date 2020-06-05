@@ -4,7 +4,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 345px;
+    height: $header_height;
     font-size: 16px;
     padding: 0 50px;
   }
@@ -17,7 +17,7 @@
 
 .header-logo {
   max-height: 182px;
-  padding: 0 50px;
+  padding-right: 50px;
 }
 
 .header-mainmenu {
