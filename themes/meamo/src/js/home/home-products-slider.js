@@ -6,8 +6,9 @@ import 'slick-carousel';
 
 
 $(document).ready(function() {
+  const $slider = $('.homepage-shop__products_list');
 
-  $('.home_products_list').slick({
+  $slider.slick({
     centerMode: true,
     centerPadding: 0,
     variableWidth:true,

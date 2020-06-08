@@ -1,0 +1,49 @@
+.homepage-shop {
+  padding: 7rem 0;
+  background-image: url('../img/meamo_logo_home_products.png');
+  background-repeat: no-repeat;
+  background-position: center 2rem;
+  background-size: 450px auto;
+  &__top {
+    text-align: center;
+  }
+  &__title {
+    text-transform: uppercase;
+    margin-bottom: 1em;
+    font-weight: $font_default_weight;
+    font-size: 1.6rem;
+  }
+  &__title-sub {
+    margin-bottom: 4em;
+    font-family: serif;
+    font-weight: normal;
+    font-size: 1.4rem;
+  }
+
+  &__products_list {
+    margin-bottom: 5rem;
+  }
+
+  &__button {
+    color: $color_home_prod_button;
+    border: 1px solid $color_home_prod_button;
+    display: inline-block;
+    font-size: 1.6rem;
+    padding: 2rem 10rem;
+    text-align: center;
+    &:hover {
+      border-color: $color_hover_link;
+    }
+  }
+@media (max-width: 767px) {
+
+} //media
+@media (min-width: 768px) {
+
+} //media
+@media (max-width: 1023px) {
+} //media
+@media (min-width: 1024px) {
+
+} //media
+} //.homepage-shop
