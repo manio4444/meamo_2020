@@ -5,7 +5,7 @@
 		top: 50%;
 		transform: translateY(-50%);
 		font-size: 0;
-		color: $hover_link;
+		color: $color_hover_link;
 		z-index: 1; //because left arrow is covered by slider
 		&:hover {opacity: 1;}
 		&::after {

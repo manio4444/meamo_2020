@@ -9,13 +9,13 @@ General settings
 body {
   font-family: $font_default;
   // color: $color1;
-  font-weight: $base_font_weight;
+  font-weight: $font_default_weight;
   background-color: $base_color_background;
 }
 
 a {
   color: inherit;
   &:hover {
-    color: $hover_link;
+    color: $color_hover_link;
   }
 }
