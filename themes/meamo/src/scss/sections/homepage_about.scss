@@ -1,0 +1,51 @@
+.page-index #custom-text {
+  background: $background_about;
+  border-radius: 0;
+  margin-bottom: 0;
+  padding: 14rem 4rem 10rem;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  color: $color_about_text;
+  h2 {
+    text-transform: uppercase;
+    color: inherit;
+    font-size: 50px;
+    font-weight: $font_default_weight_bold;
+    margin-bottom: 1.5em;
+  }
+  p {
+    color: inherit;
+    font-weight: inherit;
+    font-size: 1.1em;
+    font-family: serif;
+    line-height: 1.7em;
+  }
+  a {
+    display: inline-block;
+    font-family: $font_default;
+    margin-top: 3em;
+    position: relative;
+    &::after {
+      content: '';
+      width: 210%;
+      margin-left: -55%;
+      margin-top: .8em;
+      height: 1px;
+      display: block;
+      background-color: $color_about_text;
+    }
+  }
+  &::before {
+    content: '\00a0me amo';
+    font-family: $font_fancy;
+    font-size: 500px;
+    color: white;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 8rem;
+    text-align: center;
+    white-space: nowrap;
+  }
+}
