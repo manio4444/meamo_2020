@@ -14,8 +14,8 @@ $(document).ready(function() {
     // arrows: false,
     mobileFirst: true,
     infinite: true,
-    prevArrow: '<span class="slick-prev">Previous</span>',
-    nextArrow: '<span class="slick-next">Next</span>',
+    prevArrow: '<span class="slick-prev material-icons">keyboard_arrow_left</span>',
+    nextArrow: '<span class="slick-next material-icons">keyboard_arrow_right</span>',
   });
 
 });

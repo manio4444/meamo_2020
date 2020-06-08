@@ -4,20 +4,13 @@
 		position: absolute;
 		top: 50%;
 		transform: translateY(-50%);
-		font-size: 0;
-		color: $color_hover_link;
+		font-size: 3rem;
+		color: black;
 		z-index: 1; //because left arrow is covered by slider
-		&:hover {opacity: 1;}
-		&::after {
-			// font-family: $awesome;
-			font-size: 64px;
-		}
+		&:hover {
+      color: $color_hover_link;
+    }
 	}
-	.slick-prev::after {content: '\f104';}
-	.slick-next::after {content: '\f105';}
-
-	.slick-prev::after {transform: translateX(-2px);}
-	.slick-next::after {transform: translateX(2px);}
 
 	.slick-prev {left: 0;}
 	.slick-next {right: 0;}
