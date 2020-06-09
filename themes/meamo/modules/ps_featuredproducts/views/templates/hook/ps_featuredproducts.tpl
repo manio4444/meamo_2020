@@ -31,12 +31,16 @@
       {l s='Products second row' d='Shop.Theme.Homepage'}
     </h3>
   </div>
+
   <div class="products homepage-shop__products_list">
     {foreach from=$products item="product"}
       {include file="catalog/_partials/miniatures/product.tpl" product=$product}
     {/foreach}
   </div>
-  <a class="homepage-shop__button" href="{$allProductsLink}">
-    {l s='Go to shop' d='Shop.Theme.Homepage'}
-  </a>
+
+  <div class="text-sm-center">
+    <a class="homepage-shop__button" href="{$allProductsLink}">
+      {l s='Go to shop' d='Shop.Theme.Homepage'}
+    </a>
+  </div>
 </section>
