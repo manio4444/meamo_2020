@@ -22,10 +22,11 @@
  * @license   https://opensource.org/licenses/AFL-3.0 Academic Free License 3.0 (AFL-3.0)
  * International Registered Trademark & Property of PrestaShop SA
  *}
-<a class="banner" href="{$banner_link}" title="{$banner_desc}">
+<a class="banner ps_banner" href="{$banner_link}" title="{$banner_desc}">
   {if isset($banner_img)}
     <img src="{$banner_img}" alt="{$banner_desc}" title="{$banner_desc}" class="img-fluid">
+    <span class="ps_banner__title">Lookbook</span>
   {else}
-    <span>{$banner_desc}</span>
+    {* <span>{$banner_desc}</span> *}
   {/if}
 </a>
