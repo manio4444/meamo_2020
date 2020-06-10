@@ -28,18 +28,21 @@
     color: $color_home_prod_button;
     border: 1px solid $color_home_prod_button;
     display: inline-block;
-    font-size: 1.6rem;
-    padding: 2rem 10rem;
+    font-size: 1rem;
+    padding: 1.5em 7em;
     text-align: center;
+    text-transform: uppercase;
     &:hover {
       border-color: $color_hover_link;
     }
   }
-@media (max-width: 767px) {
 
+  .meamo-productbox {
+    margin: 0 2px;
+  }
+@media (max-width: 767px) {
 } //media
 @media (min-width: 768px) {
-
 } //media
 @media (max-width: 1023px) {
 } //media

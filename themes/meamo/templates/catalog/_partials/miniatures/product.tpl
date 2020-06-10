@@ -23,7 +23,7 @@
  * International Registered Trademark & Property of PrestaShop SA
  *}
 {block name='product_miniature_item'}
-  <article class="product-miniature js-product-miniature meamo-product" data-id-product="{$product.id_product}" data-id-product-attribute="{$product.id_product_attribute}" itemscope itemtype="http://schema.org/Product">
+  <article class="product-miniature js-product-miniature meamo-productbox" data-id-product="{$product.id_product}" data-id-product-attribute="{$product.id_product_attribute}" itemscope itemtype="http://schema.org/Product">
     <div class="thumbnail-container">
       {block name='product_thumbnail'}
         {if $product.cover}
@@ -41,18 +41,18 @@
         {/if}
       {/block}
 
-      <div class="product-description">
+      <div class="meamo-productbox__description">
         {block name='product_name'}
           {if $page.page_name == 'index'}
-            <h3 class="h3 product-title" itemprop="name"><a href="{$product.url}">{$product.name|truncate:30:'...'}</a></h3>
+            <h3 class="meamo-productbox__title" itemprop="name"><a href="{$product.url}">{$product.name|truncate:30:'...'}</a></h3>
           {else}
-            <h2 class="h3 product-title" itemprop="name"><a href="{$product.url}">{$product.name|truncate:30:'...'}</a></h2>
+            <h2 class="meamo-productbox__title" itemprop="name"><a href="{$product.url}">{$product.name|truncate:30:'...'}</a></h2>
           {/if}
         {/block}
 
         {block name='product_price_and_shipping'}
           {if $product.show_price}
-            <div class="product-price-and-shipping">
+            <div class="meamo-productbox__price">
               {if $product.has_discount}
                 {hook h='displayProductPriceBlock' product=$product type="old_price"}
 
@@ -91,19 +91,6 @@
         </ul>
       {/block}
 
-      <div class="highlighted-informations{if !$product.main_variants} no-variants{/if} hidden-sm-down">
-        {block name='quick_view'}
-          <a class="quick-view" href="#" data-link-action="quickview">
-            <i class="material-icons search">&#xE8B6;</i> {l s='Quick view' d='Shop.Theme.Actions'}
-          </a>
-        {/block}
-
-        {block name='product_variants'}
-          {if $product.main_variants}
-            {include file='catalog/_partials/variant-links.tpl' variants=$product.main_variants}
-          {/if}
-        {/block}
-      </div>
     </div>
   </article>
 {/block}

@@ -1,0 +1,7 @@
+#products .thumbnail-container .product-thumbnail img,
+.featured-products .thumbnail-container .product-thumbnail img,
+.product-accessories .thumbnail-container .product-thumbnail img,
+.product-miniature .thumbnail-container .product-thumbnail img {
+  width: 100%;
+  position: static;
+}

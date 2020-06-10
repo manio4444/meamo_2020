@@ -1,0 +1,40 @@
+.meamo-productbox {
+  // width: 380px;
+  // height: 570px;
+  .thumbnail-container {
+    margin-bottom: 0;
+    height: 100%;
+    width: 100%;
+    background: initial;
+    box-shadow: none;
+    .product-thumbnail {
+      height: 100%;
+      width: 380px;
+      height: 570px;
+    }
+  }
+
+  .product-flags li.product-flag {
+    background: $background_prod_flag;
+  }
+
+  &__description {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 1rem 0;
+  }
+  &__title {
+    color: $color_prod_title;
+    text-transform: uppercase;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    margin-bottom: 0;
+    margin-right: .5rem;
+  }
+  &__price {
+    color: $color_prod_price;
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+}
