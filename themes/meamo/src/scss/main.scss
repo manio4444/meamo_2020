@@ -8,12 +8,15 @@
 @import 'base/settings';
 
 @import 'override/prestashop';
+@import 'override/btn-primary';
 @import 'override/product';
 @import 'override/ps_banner';
 
+@import 'modules/checkbox';
 @import 'modules/slider';
 @import 'modules/product';
 @import 'modules/breadcrumbs';
+@import 'modules/newsletter';
 
 @import 'sections/header';
 

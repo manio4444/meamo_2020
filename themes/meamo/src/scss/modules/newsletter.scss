@@ -1,0 +1,47 @@
+.meamo-newsletter {
+  text-align: center;
+  &__title {
+  }
+  &__txt {
+    max-width: 900px;
+    color: #292929;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 !important;
+    font-family: serif;
+    font-size: 1.4rem;
+    margin-bottom: 2rem;
+  }
+  &__inputs {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2rem;
+    .input-wrapper {
+      flex-grow: 1;
+      max-width: 500px;
+      margin-right: .5rem;
+      input[type=email] {
+        border: 1px solid $color_meamo_gray;
+        &:focus {
+          border-color: $color_hover_link;
+        }
+      }
+    }
+    input[type="submit"] {
+      text-transform: uppercase;
+      &:focus,
+      &:hover {
+        background-color: $color_hover_link;
+      }
+    }
+  }
+  &__agreement {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  p.alert {
+    margin: 1rem 0;
+  }
+}

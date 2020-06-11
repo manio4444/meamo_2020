@@ -26,31 +26,19 @@
 <div class="block_newsletter meamo-newsletter">
   <div class="row">
     <div class="col-xs-12">
-      <h3 class="meamo-newsletter__title">
-      {l s='Newletter' d='Shop.Theme.Newletter'}
+      <h3 class="meamo-newsletter__title meamo-title-normal">
+      {l s='Newsletter' d='Shop.Theme.Newsletter'}
     </h3>
 
       <form action="{$urls.pages.index}#footer" method="post">
         <div class="row">
             {if $conditions}
             <div class="col-xs-12">
-              <p>{$conditions}</p>
+              <p class="meamo-newsletter__txt">{$conditions}</p>
             </div>
             {/if}
 
-          <div class="col-xs-12">
-            <input
-              class="btn btn-primary float-xs-right hidden-xs-down"
-              name="submitNewsletter"
-              type="submit"
-              value="{l s='Subscribe' d='Shop.Theme.Actions'}"
-            >
-            <input
-              class="btn btn-primary float-xs-right hidden-sm-up"
-              name="submitNewsletter"
-              type="submit"
-              value="{l s='OK' d='Shop.Theme.Actions'}"
-            >
+          <div class="col-xs-12 meamo-newsletter__inputs">
             <div class="input-wrapper">
               <input
                 name="email"
@@ -60,13 +48,22 @@
                 aria-labelledby="block-newsletter-label"
               >
             </div>
+            <input
+            class="btn btn-primary"
+            name="submitNewsletter"
+            type="submit"
+            value="{l s='Sign up' d='Shop.Theme.Newsletter'}"
+            >
             <input type="hidden" name="action" value="0">
             <div class="clearfix"></div>
           </div>
 
-          <div class="col-xs-12">
-            <input type="checkbox" name="" value="">
-            <span>{l s='Newletter agreement' d='Shop.Theme.Newletter'}</span>
+          <div class="col-xs-12 meamo-newsletter__agreement">
+            <label for="cNewsletter" class="meamo-checkbox">
+              <input type="checkbox" id="cNewsletter" required>
+              <span class="meamo-checkbox__icon"></span>
+            </label>
+            <span>{l s='Newsletter agreement' d='Shop.Theme.Newsletter'}</span>
           </div>
 
           <div class="col-xs-12">
