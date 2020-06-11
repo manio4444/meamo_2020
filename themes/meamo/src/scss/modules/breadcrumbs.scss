@@ -1,0 +1,16 @@
+.meamo-breadcrumbs {
+  & > ol {
+    display: flex;
+    flex-wrap: wrap;
+    list-style-type: none;
+    margin: 3rem 0;
+  }
+  &__element {
+    font-family: serif;
+    font-size: 1.2rem;
+    &:not(:last-child)::after {
+      content: '/';
+      margin: 0 .4rem;
+    }
+  }
+}
