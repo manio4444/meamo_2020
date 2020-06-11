@@ -1,3 +1,21 @@
+#products .thumbnail-container,
+.featured-products .thumbnail-container,
+.product-accessories .thumbnail-container,
+.product-miniature .thumbnail-container {
+  position: relative;
+  margin-bottom: 0;
+  height: auto;
+  width: auto;
+  background: transparent;
+  box-shadow: none;
+}
+
+#products .thumbnail-container .product-thumbnail,
+.featured-products .thumbnail-container .product-thumbnail,
+.product-accessories .thumbnail-container .product-thumbnail,
+.product-miniature .thumbnail-container .product-thumbnail {
+  height: auto;
+}
 #products .thumbnail-container .product-thumbnail img,
 .featured-products .thumbnail-container .product-thumbnail img,
 .product-accessories .thumbnail-container .product-thumbnail img,

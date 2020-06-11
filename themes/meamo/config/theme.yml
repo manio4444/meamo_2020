@@ -62,9 +62,9 @@ global_settings:
         - ps_mainmenu
         - ps_customersignin
         - ps_searchbar
-        - ps_currencyselector
         - ps_shoppingcart
         # - ps_wishlist TODO:
+        - ps_currencyselector
         - ps_languageselector
       displayNav2:
         - ps_currencyselector

@@ -29,7 +29,7 @@
     {/block}
   </div>
 </div>
-<div class="footer-container">
+<div class="footer-container meamo-footer">
   <div class="container">
     <div class="row">
       {block name='hook_footer'}
@@ -43,12 +43,11 @@
     </div>
     <div class="row">
       <div class="col-md-12">
-        <p class="text-sm-center">
-          {block name='copyright_link'}
-            <a class="_blank" href="https://www.prestashop.com" target="_blank" rel="nofollow">
-              {l s='%copyright% %year% - Ecommerce software by %prestashop%' sprintf=['%prestashop%' => 'PrestaShop™', '%year%' => 'Y'|date, '%copyright%' => '©'] d='Shop.Theme.Global'}
-            </a>
-          {/block}
+        <p>
+          {l s='Projekt i realizacja' d='Shop.Theme.Footer'} -
+          <a class="_blank" href="#" target="_blank" rel="nofollow">
+            <strong>Clou.Studio</strong>
+          </a>
         </p>
       </div>
       <div class="row">
