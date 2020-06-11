@@ -24,7 +24,7 @@
  *}
 <section class="homepage-shop">
   <div class="homepage-shop__top">
-    <h2 class="homepage-shop__title">
+    <h2 class="homepage-shop__title meamo-title-normal">
       {l s='Products first row' d='Shop.Theme.Homepage'}
     </h2>
     <h3 class="homepage-shop__title-sub">

@@ -19,3 +19,10 @@ a {
     color: $color_hover_link;
   }
 }
+
+.meamo-title-normal {
+  text-transform: uppercase;
+  margin-bottom: 1em;
+  font-weight: $font_default_weight;
+  font-size: 1.6rem;
+}

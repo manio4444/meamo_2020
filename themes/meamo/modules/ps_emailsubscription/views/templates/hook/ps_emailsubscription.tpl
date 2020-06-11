@@ -23,12 +23,21 @@
  * International Registered Trademark & Property of PrestaShop SA
  *}
 
-<div class="block_newsletter col-lg-8 col-md-12 col-sm-12">
+<div class="block_newsletter meamo-newsletter">
   <div class="row">
-    <p id="block-newsletter-label" class="col-md-5 col-xs-12">{l s='Get our latest news and special sales' d='Shop.Theme.Global'}</p>
-    <div class="col-md-7 col-xs-12">
+    <div class="col-xs-12">
+      <h3 class="meamo-newsletter__title">
+      {l s='Newletter' d='Shop.Theme.Newletter'}
+    </h3>
+
       <form action="{$urls.pages.index}#footer" method="post">
         <div class="row">
+            {if $conditions}
+            <div class="col-xs-12">
+              <p>{$conditions}</p>
+            </div>
+            {/if}
+
           <div class="col-xs-12">
             <input
               class="btn btn-primary float-xs-right hidden-xs-down"
@@ -54,10 +63,13 @@
             <input type="hidden" name="action" value="0">
             <div class="clearfix"></div>
           </div>
+
           <div class="col-xs-12">
-              {if $conditions}
-                <p>{$conditions}</p>
-              {/if}
+            <input type="checkbox" name="" value="">
+            <span>{l s='Newletter agreement' d='Shop.Theme.Newletter'}</span>
+          </div>
+
+          <div class="col-xs-12">
               {if $msg}
                 <p class="alert {if $nw_error}alert-danger{else}alert-success{/if}">
                   {$msg}
