@@ -22,16 +22,4 @@
  * @license   https://opensource.org/licenses/AFL-3.0 Academic Free License 3.0 (AFL-3.0)
  * International Registered Trademark & Property of PrestaShop SA
  *}
-{extends file='layouts/layout-both-columns.tpl'}
-
-{block name='right_column'}{/block}
-
-{block name='content_wrapper'}
-  <div id="content-wrapper" class="left-column col-xs-12 col-sm-8 col-md-9">
-    {hook h="displayContentWrapperTop"}
-    {block name='content'}
-      <p>Hello world! This is HTML5 Boilerplate.</p>
-    {/block}
-    {hook h="displayContentWrapperBottom"}
-  </div>
-{/block}
+{extends file='layouts/layout-categories-top.tpl'}

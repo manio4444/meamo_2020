@@ -22,10 +22,9 @@
  * @license   https://opensource.org/licenses/AFL-3.0 Academic Free License 3.0 (AFL-3.0)
  * International Registered Trademark & Property of PrestaShop SA
  *}
-{extends file='layouts/layout-both-columns.tpl'}
+{extends file='layouts/layout-categories-top.tpl'}
 
-{block name='left_column'}{/block}
-{block name='right_column'}{/block}
+{block name='categories_top'}{/block}
 
 {block name='content_wrapper'}
   <div id="content-wrapper">

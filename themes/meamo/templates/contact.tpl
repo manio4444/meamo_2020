@@ -26,7 +26,7 @@
 
 {block name='page_header_container'}{/block}
 
-{block name='left_column'}
+{block name='categories_top'}
   <div id="left-column" class="col-xs-12 col-sm-4 col-md-3">
     {widget name="ps_contactinfo" hook='displayLeftColumn'}
   </div>
