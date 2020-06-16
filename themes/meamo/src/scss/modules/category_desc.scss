@@ -1,0 +1,15 @@
+.meamo-category-desc {
+  text-align: center;
+  &__title {
+    font-size: 1.6rem;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+  }
+  &__txt {
+    margin-bottom: 3rem;
+    p {
+      font-family: serif;
+      font-size: 1.2rem;
+    }
+  }
+}

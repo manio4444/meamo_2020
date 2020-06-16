@@ -42,7 +42,7 @@
         {include file='catalog/_partials/product-activation.tpl'}
       {/block}
 
-      <header class="header-navigation">
+      <header>
         {block name='header'}
           {include file='_partials/header.tpl'}
         {/block}
@@ -56,13 +56,14 @@
         {hook h="displayWrapperTop"}
 
         {block name='breadcrumb'}
-          {if $page.page_name != 'index'}
+          {if $page.page_name == 'category' && $category.id == 2}
+          {else}
             {include file='_partials/breadcrumb.tpl'}
           {/if}
         {/block}
 
         {block name="categories_top"}
-          <div class="meamo-categories">
+          <div class="meamo-categories meamo-wrapper">
             {if $page.page_name == 'category'}
               {hook h='displayTopCategories'}
             {/if}

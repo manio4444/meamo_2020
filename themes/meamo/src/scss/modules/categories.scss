@@ -1,0 +1,48 @@
+.meamo-categories {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 3rem 0;
+    li {
+      font-size: 1.2rem;
+      font-family: serif;
+      a:hover {
+        color: inherit;
+        position: relative;
+        &::after {
+          content: '';
+          position: absolute;
+          bottom: -.4rem;
+          left: 0;
+          right: 0;
+          height: 1px;
+          background-color: $color_meamo_black;
+        }
+      }
+    }
+  }
+@media (max-width: 767px) {
+  ul {
+    flex-direction: column;
+    li {
+      margin: .5rem 0;
+    }
+  }
+} //media
+@media (min-width: 768px) {
+  ul {
+    li {
+      margin: 0 1rem;
+    }
+  }
+} //media
+@media (max-width: 1023px) {
+} //media
+@media (min-width: 1024px) {
+} //media
+} //.meamo-categories

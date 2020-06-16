@@ -1,5 +1,6 @@
 .header-navigation {
   text-transform: uppercase;
+  border-bottom: 1px solid $color_border_header;
   &__container {
     display: flex;
     justify-content: space-between;

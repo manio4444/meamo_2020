@@ -20,9 +20,23 @@ a {
   }
 }
 
+p {
+    font-size: 1.2rem;
+    color: $color_meamo_black;
+    // font-weight: 400;
+}
+
 .meamo-title-normal {
   text-transform: uppercase;
   margin-bottom: 1em;
   font-weight: $font_default_weight;
   font-size: 1.6rem;
+}
+
+.meamo-wrapper {
+  width: 100%;
+  max-width: calc(#{$width_wrapper} + 2 * #{$padding_wrapper});
+  margin: 0 auto;
+  padding-left: $padding_wrapper;
+  padding-right: $padding_wrapper;
 }

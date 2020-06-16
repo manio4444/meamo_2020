@@ -26,6 +26,11 @@
 
 {block name='categories_top'}{/block}
 
+{if $page.page_name == 'index'}
+  {block name='breadcrumb'}{/block}
+{/if}
+
+
 {block name='content_wrapper'}
   <div id="content-wrapper">
     {hook h="displayContentWrapperTop"}

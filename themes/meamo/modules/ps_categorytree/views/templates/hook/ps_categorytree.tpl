@@ -31,7 +31,7 @@
           <li data-depth="{$depth}">
             {if $depth===0}
               <a href="{$node.link}">{$node.name}</a>
-              {if $node.children}
+              {* {if $node.children}
                 <div class="navbar-toggler collapse-icons" data-toggle="collapse" data-target="#exCollapsingNavbar{$node.id}">
                   <i class="material-icons add">&#xE145;</i>
                   <i class="material-icons remove">&#xE15B;</i>
@@ -50,7 +50,7 @@
                 <div class="collapse" id="exCollapsingNavbar{$node.id}">
                   {categories nodes=$node.children depth=$depth+1}
                 </div>
-              {/if}
+              {/if} *}
             {/if}
           </li>
         {/foreach}
@@ -59,9 +59,8 @@
   {/strip}
 {/function}
 
-<div class="block-categories hidden-sm-down">
-  <ul class="category-top-menu">
-    <li><a class="text-uppercase h6" href="{$categories.link nofilter}">{$categories.name}</a></li>
-    <li>{categories nodes=$categories.children}</li>
-  </ul>
-</div>
+{* <ul class="category-top-menu">
+  <li><a class="text-uppercase h6" href="{$categories.link nofilter}">{$categories.name}</a></li>
+  <li>{categories nodes=$categories.children}</li>
+</ul> *}
+{categories nodes=$categories.children}
