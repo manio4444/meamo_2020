@@ -68,6 +68,14 @@ global_settings:
         - ps_customersignin
         - ps_shoppingcart
         - ps_languageselector
+      displayMobile1:
+        - ps_mainmenu
+        - ps_customersignin
+        - ps_searchbar
+        - ps_shoppingcart
+        # - ps_wishlist TODO:
+        - ps_currencyselector
+        - ps_languageselector
       displayTop:
         - ps_mainmenu
         - ps_searchbar

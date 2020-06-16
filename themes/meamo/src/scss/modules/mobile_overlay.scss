@@ -1,0 +1,52 @@
+.mobile-overlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  background-color: $base_color_background;
+  transition: .2s ease;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  text-align: center;
+  font-size: 1.5rem;
+  line-height: 2.2rem;
+
+
+  &:not(.is-active) {
+    opacity: 0;
+    pointer-events: none;
+  }
+
+  .header-mainmenu {
+    &__element {
+    }
+  }
+
+  .header-navigation {
+    &__right-item {
+      display: flex;
+      justify-content: center;
+      a {
+        display: flex;
+        align-items: center;
+      }
+      &:not(:last-child) {
+        // margin-top: 1rem;
+      }
+    }
+  }
+
+  &__close {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    font-size: 60px;
+
+  }
+
+} //.mobile-overlay
