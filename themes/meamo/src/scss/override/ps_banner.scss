@@ -1,9 +1,10 @@
 .ps_banner {
   position: relative;
+  color: #ffffff;
   &__title {
     text-transform: uppercase;
-    font-size: 125px;
     font-family: $font_bigtitle;
+    font-weight: 600;
     position: absolute;
     top: 0;
     bottom: 0;
@@ -14,4 +15,22 @@
     align-items: center;
     text-align: center;
   }
-}
+
+@media (max-width: 767px) {
+  &__title {
+    font-size: 50px;
+  }
+} //media
+@media (min-width: 768px) {
+  &__title {
+    font-size: 90px;
+  }
+} //media
+@media (max-width: 1023px) {
+} //media
+@media (min-width: 1024px) {
+  &__title {
+    font-size: 125px;
+  }
+} //media
+} //.ps_banner
