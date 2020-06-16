@@ -2,7 +2,6 @@
   background: $background_about;
   border-radius: 0;
   margin-bottom: 0;
-  padding: 14rem 4rem 10rem;
   text-align: center;
   position: relative;
   overflow: hidden;
@@ -10,9 +9,7 @@
   h2 {
     text-transform: uppercase;
     color: inherit;
-    font-size: 50px;
     font-weight: $font_default_weight_bold;
-    margin-bottom: 1.5em;
   }
   p {
     color: inherit;
@@ -27,7 +24,6 @@
   a {
     display: inline-block;
     font-family: $font_default;
-    margin-top: 3em;
     position: relative;
     &::after {
       content: '';
@@ -40,15 +36,52 @@
     }
   }
   &::before {
-    content: '\00a0me amo';
     font-family: $font_fancy;
-    font-size: 500px;
     color: white;
     position: absolute;
     left: 0;
     right: 0;
-    top: 8rem;
     text-align: center;
     white-space: nowrap;
   }
+
+@media (max-width: 767px) {
+}//media
+@media (min-width: 768px) {
+}//media
+@media (max-width: 1023px) {
+  padding: 6rem 1rem 2.5rem;
+  h2 {
+    font-size: 40px;
+    margin-bottom: .8em;
+  }
+  a {
+    margin-top: 1em;
+  }
+  &::before {
+    content: 'me amo';
+    font-size: 140px;
+    top: 3.6rem;
+  }
+}//media
+@media (min-width: 1024px) {
+  padding: 14rem 4rem 10rem;
+  h2 {
+    font-size: 50px;
+    margin-bottom: 1.5em;
+  }
+  a {
+    margin-top: 3em;
+  }
+  &::before {
+    content: '\00a0me amo';
+    font-size: 400px;
+    top: 8rem;
+  }
+}//media
+@media (min-width: 1440px) {
+  &::before {
+    font-size: 500px;
+  }
+}//media
 }
