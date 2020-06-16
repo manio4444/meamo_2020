@@ -39,7 +39,7 @@
   </div>
 
   <div class="text-xs-center">
-    <a class="homepage-shop__button" href="{$link->getCategoryLink(2)|escape:'html':'UTF-8'}">
+    <a class="meamo-button homepage-shop__button" href="{$link->getCategoryLink(2)|escape:'html':'UTF-8'}">
       {l s='Go to shop' d='Shop.Theme.Homepage'}
     </a>
   </div>

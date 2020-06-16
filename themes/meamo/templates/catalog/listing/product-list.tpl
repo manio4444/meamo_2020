@@ -28,17 +28,15 @@
   <section id="main">
 
     {block name='product_list_header'}
-      <h2 id="js-product-list-header" class="h2">{$listing.label}</h2>
+      <h2 id="js-product-list-header" class="h2 text-xs-center meamo-category-desc__title">{$listing.label}</h2>
     {/block}
 
-    <section id="products">
+    <section id="products" class="meamo-wrapper">
       {if $listing.products|count}
 
-        <div>
-          {block name='product_list_top'}
-            {include file='catalog/_partials/products-top.tpl' listing=$listing}
-          {/block}
-        </div>
+        {block name='product_list_top'}
+          {include file='catalog/_partials/products-top.tpl' listing=$listing}
+        {/block}
 
         {block name='product_list_active_filters'}
           <div id="" class="hidden-sm-down">
@@ -67,6 +65,12 @@
 
         <div id="js-product-list-bottom"></div>
       {/if}
+
+      <div class="text-xs-center">
+        <a class="meamo-button meamo-products-list__home-button" href="{$urls.base_url}">
+          {l s='Go to homepage' d='Shop.Theme.Homepage'}
+        </a>
+      </div>
     </section>
 
   </section>

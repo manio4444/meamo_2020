@@ -22,16 +22,6 @@
   }
 
   &__button {
-    color: $color_home_prod_button;
-    border: 1px solid $color_home_prod_button;
-    display: inline-block;
-    font-size: 1rem;
-    padding: 1em 5em;
-    text-align: center;
-    text-transform: uppercase;
-    &:hover {
-      border-color: $color_hover_link;
-    }
   }
 
   .meamo-productbox {

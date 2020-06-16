@@ -24,3 +24,10 @@
   width: 100%;
   position: static;
 }
+
+#products .product-miniature,
+.featured-products .product-miniature,
+.product-accessories .product-miniature,
+.product-miniature .product-miniature {
+  margin: 0;
+}
