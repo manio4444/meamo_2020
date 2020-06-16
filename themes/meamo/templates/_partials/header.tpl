@@ -1,5 +1,5 @@
 {block name='header_top'}
-  <div class="header-navigation meamo-wrapper">
+  <div class="meamo-wrapper">
     <div class="header-navigation__desktop">
 
         <div class="header-logo">
