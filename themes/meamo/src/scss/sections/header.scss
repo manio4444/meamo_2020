@@ -5,7 +5,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: $header_height;
+    height: $header_height_medium;
     font-size: 1rem;
     .header-logo {
       padding-right: 25px;
@@ -14,7 +14,7 @@
         margin: 0;
       }
       img {
-        max-height: 120px;
+        max-height: 91px;
       }
     }
   }
@@ -31,7 +31,7 @@
         margin: 0;
       }
       img {
-        max-height: 70px;
+        max-height: 61px;
       }
     }
   }
@@ -142,8 +142,14 @@
 } //media
 @media (min-width: 1440px) {
   .header-navigation {
-    &__container {
-      padding: 0 50px;
+    &__desktop {
+      height: $header_height_max;
+      .header-logo {
+        padding-right: 50px;
+        img {
+          max-height: 130px;
+        }
+      }
     }
     &__right-item {
       &:not(:last-child) {
@@ -158,10 +164,5 @@
       }
     }
   }
-  .header-logo {
-    padding-right: 50px;
-    img {
-      max-height: 182px;
-    }
-  }
+
 } //media
