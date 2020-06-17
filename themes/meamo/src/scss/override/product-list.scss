@@ -17,7 +17,21 @@
   &__home-button {
     margin: 2rem auto;
   }
-}
+@media (max-width: 767px) {
+  .products {
+    justify-content: center !important;
+    .meamo-productbox:not(.hack) {
+      width: 380px;
+    }
+  }
+} //media
+@media (min-width: 768px) {
+} //media
+@media (max-width: 1023px) {
+} //media
+@media (min-width: 1024px) {
+} //media
+} //.meamo-products-list
 
 .meamo-products-list-top {
   margin: 3rem 0;

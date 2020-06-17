@@ -28,13 +28,15 @@
       {foreach from=$breadcrumb.links item=path name=breadcrumb key=key}
         {block name='breadcrumb_item'}
           <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem" class="meamo-breadcrumbs__element">
-            <a itemprop="item" href="{$path.url}">
               {if $key == 0}
+              <a href="{$link->getCategoryLink(2)|escape:'html':'UTF-8'}">
                 {l s='Shop' d='Shop.Theme.Global'}
+              </a>
               {else}
-              <span itemprop="name">{$path.title}</span>
+              <a itemprop="item" href="{$path.url}">
+                <span itemprop="name">{$path.title}</span>
+              </a>
               {/if}
-            </a>
             <meta itemprop="position" content="{$smarty.foreach.breadcrumb.iteration}">
           </li>
         {/block}
