@@ -35,7 +35,9 @@
       {if $listing.products|count}
 
         {block name='product_list_top'}
-          {include file='catalog/_partials/products-top.tpl' listing=$listing}
+          {if $category.id != 2}
+            {include file='catalog/_partials/products-top.tpl' listing=$listing}
+          {/if}
         {/block}
 
         {block name='product_list_active_filters'}
