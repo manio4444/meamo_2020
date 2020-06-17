@@ -1,0 +1,17 @@
+.meamo-pagination {
+  text-align: center;
+  ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    li {
+      &.current a {
+        color: $color_hover_link;
+        font-size: 1.25rem;
+      }
+      a:not(.previous):not(.next) {
+        letter-spacing: .5rem;
+      }
+    }
+  }
+}
