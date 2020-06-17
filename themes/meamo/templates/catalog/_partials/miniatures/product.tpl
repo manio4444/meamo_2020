@@ -23,6 +23,7 @@
  * International Registered Trademark & Property of PrestaShop SA
  *}
 {block name='product_miniature_item'}
+{* <pre style="font-size: 12px; line-height: 15px;">{$product.images|var_dump}</pre> *}
   <article class="product-miniature js-product-miniature meamo-productbox" data-id-product="{$product.id_product}" data-id-product-attribute="{$product.id_product_attribute}" itemscope itemtype="http://schema.org/Product">
     <div class="thumbnail-container">
       {block name='product_thumbnail'}
@@ -33,6 +34,16 @@
               alt="{if !empty($product.cover.legend)}{$product.cover.legend}{else}{$product.name|truncate:30:'...'}{/if}"
               data-full-size-image-url="{$product.cover.large.url}"
             />
+
+            {foreach from=$product.images item="image"}
+              {if $image.legend == 'hover'}
+                <img
+                  class="meamo-productbox__image-hover"
+                  src="{$image.bySize.home_default.url}"
+                  data-full-size-image-url="{$image.large.url}"
+                />
+              {/if}
+            {/foreach}
           </a>
         {else}
           <a href="{$product.url}" class="thumbnail product-thumbnail">
