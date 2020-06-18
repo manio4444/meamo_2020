@@ -15,9 +15,9 @@ meta:
     layout-full-width:
       name: Full Width
       description: No side columns, ideal for distraction-free pages such as product pages.
-    layout-about:
-      name: Page About us
-      description: Some custom txt and pictures
+    layout-cms:
+      name: Layuot for CMS pages
+      description: Takes care of custom pages depending on page ID
     layout-categories-top:
       name: Categories layout
       description: Layout with categories on top
@@ -145,3 +145,4 @@ theme_settings:
     new-products: layout-categories-top
     prices-drop: layout-categories-top
     contact: layout-categories-top
+    cms: layout-cms
