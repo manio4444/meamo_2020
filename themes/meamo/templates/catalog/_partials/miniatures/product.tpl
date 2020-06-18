@@ -42,6 +42,7 @@
                   src="{$image.bySize.home_default.url}"
                   data-full-size-image-url="{$image.large.url}"
                 />
+                {break} {* prevent more than 1 image show *}
               {/if}
             {/foreach}
           </a>
