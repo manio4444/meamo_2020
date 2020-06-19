@@ -1,3 +1,9 @@
+<style media="screen">
+.meamo-aboutus__quote {
+  background-image: url('{$urls.theme_assets}/img/meamo-quote.png');
+}
+</style>
+
 <section class="meamo-aboutus">
 
   <div id="custom-text"> {* same code as on homepage *}
@@ -7,7 +13,7 @@
 
   <div class="meamo-aboutus__sides reverse-desktop">
     <div class="meamo-aboutus__side meamo-aboutus__side-img">
-      <img src="/meamo_2020/themes/meamo/assets/img/shallow-focus-photography-of-assorted-color-clothes-hanged-1078958.jpg" alt="">
+      <img src="{$urls.theme_assets}/img/shallow-focus-photography-of-assorted-color-clothes-hanged-1078958.jpg" alt="">
     </div>
     <div class="meamo-aboutus__side meamo-aboutus__side-txt">
       <p class="meamo-aboutus__quote">{l s='Block 1 quote' d='Shop.Theme.Aboutus'}</p>
@@ -22,7 +28,7 @@
 
   <div class="meamo-aboutus__sides">
     <div class="meamo-aboutus__side meamo-aboutus__side-img">
-      <img src="/meamo_2020/themes/meamo/assets/img/shallow-focus-photography-of-assorted-color-clothes-hanged-1078958.jpg" alt="">
+      <img src="{$urls.theme_assets}/img/shallow-focus-photography-of-assorted-color-clothes-hanged-1078958.jpg" alt="">
     </div>
     <div class="meamo-aboutus__side meamo-aboutus__side-txt">
       <h3 class="meamo-title-normal">{l s='Block 2 title' d='Shop.Theme.Aboutus'}</h3>
