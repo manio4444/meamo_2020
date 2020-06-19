@@ -27,8 +27,8 @@
   <div class="row">
     <div class="col-xs-12">
       <h3 class="meamo-newsletter__title meamo-title-normal">
-      {l s='Newsletter' d='Shop.Theme.Newsletter'}
-    </h3>
+        {l s='Newsletter' d='Shop.Theme.Newsletter'}
+      </h3>
 
       <form action="{$urls.pages.index}#footer" method="post">
         <div class="row">

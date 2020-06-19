@@ -23,11 +23,9 @@
  * International Registered Trademark & Property of PrestaShop SA
  *}
 <div class="container">
-  <div class="row">
-    {block name='hook_footer_before'}
-      {hook h='displayFooterBefore'}
-    {/block}
-  </div>
+  {block name='hook_footer_before'}
+    {hook h='displayFooterBefore'}
+  {/block}
 </div>
 <div class="footer-container meamo-footer">
   <div class="container">
