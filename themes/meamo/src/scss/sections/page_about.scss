@@ -1,0 +1,74 @@
+.meamo-aboutus {
+  &__sides {
+    display: flex;
+  }
+  &__side-txt {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  &__quote {
+    background-image: url('/meamo_2020/themes/meamo/assets/img/meamo-quote.png');
+    background-position: left top;
+    background-repeat: no-repeat;
+    background-size: auto 15px;
+    font-family: serif;
+    font-style: italic;
+    font-weight: bold;
+    font-size: 2.5rem;
+    line-height: 2.4rem;
+    padding-top: 3rem;
+    margin-bottom: 3rem;
+  }
+  &__txt {
+    font-family: serif;
+    margin-bottom: 3rem;
+  }
+
+  &__side-img {
+    img {
+      width: 100%;
+    }
+  }
+  &__more-link {
+  }
+  &__bottom-quote {
+    p {
+      max-width: 800px;
+    }
+  }
+
+@media (max-width: 767px) {
+} //media
+@media (min-width: 768px) {
+} //media
+@media (max-width: 1023px) {
+  &__sides {
+    margin-top: 2rem;
+    flex-direction: column;
+  }
+  &__side-txt {
+    padding: 1rem;
+  }
+} //media
+@media (min-width: 1024px) {
+  &__sides {
+    margin-top: 3rem;
+    &.reverse-desktop {
+      .meamo-aboutus__side:nth-child(2) {
+        order: -1;
+      }
+    }
+  }
+  &__side {
+    flex-grow: 1;
+    flex-shrink: 0;
+    flex-basis: 50%;
+  }
+  &__side-txt {
+    padding: 3rem;
+  }
+} //media
+} //.meamo-aboutus

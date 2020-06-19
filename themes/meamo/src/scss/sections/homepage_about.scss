@@ -1,3 +1,4 @@
+.meamo-aboutus #custom-text,
 .page-index #custom-text {
   background: $background_about;
   border-radius: 0;
@@ -6,6 +7,7 @@
   position: relative;
   overflow: hidden;
   color: $color_about_text;
+  .meamo-aboutus__title,
   h2 {
     text-transform: uppercase;
     color: inherit;
@@ -21,6 +23,17 @@
     margin-left: auto;
     margin-right: auto;
   }
+  &::before {
+    font-family: $font_fancy;
+    color: white;
+    position: absolute;
+    left: 0;
+    right: 0;
+    text-align: center;
+    white-space: nowrap;
+    pointer-events: none;
+  }
+  .meamo-aboutus__more-link,
   a {
     display: inline-block;
     font-family: $font_default;
@@ -35,15 +48,6 @@
       background-color: $color_about_text;
     }
   }
-  &::before {
-    font-family: $font_fancy;
-    color: white;
-    position: absolute;
-    left: 0;
-    right: 0;
-    text-align: center;
-    white-space: nowrap;
-  }
 
 @media (max-width: 767px) {
 }//media
@@ -51,6 +55,7 @@
 }//media
 @media (max-width: 1023px) {
   padding: 6rem 1rem 2.5rem;
+  .meamo-aboutus__title,
   h2 {
     font-size: 40px;
     margin-bottom: .8em;
@@ -66,6 +71,7 @@
 }//media
 @media (min-width: 1024px) {
   padding: 14rem 4rem 10rem;
+  .meamo-aboutus__title,
   h2 {
     font-size: 50px;
     margin-bottom: 1.5em;
@@ -84,4 +90,20 @@
     font-size: 500px;
   }
 }//media
+}//.page-index #custom-text
+
+.meamo-aboutus__more-link,
+page-index #custom-text a {
+  display: inline-block;
+  font-family: $font_default;
+  position: relative;
+  &::after {
+    content: '';
+    width: 210%;
+    margin-left: -55%;
+    margin-top: .8em;
+    height: 1px;
+    display: block;
+    background-color: $color_about_text;
+  }
 }

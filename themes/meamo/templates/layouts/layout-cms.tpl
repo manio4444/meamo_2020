@@ -5,7 +5,10 @@
 
 {block name="content_wrapper"}
   {if $cms.id == 4} {* about us *}
-  about
+    {include file='cms/custom/aboutus.tpl'}
   {else}
+  {block name="content"}
+    <p>Hello world! This is HTML5 Boilerplate.</p>
+  {/block}
   {/if}
 {/block}
