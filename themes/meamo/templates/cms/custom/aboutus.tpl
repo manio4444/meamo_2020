@@ -2,6 +2,9 @@
 .meamo-aboutus__quote {
   background-image: url('{$urls.theme_assets}/img/meamo-quote.png');
 }
+.meamo-aboutus__fancy-txt::before {
+  content: '{l s='Block 2 philosophy' d='Shop.Theme.Aboutus'}';
+}
 </style>
 
 <section class="meamo-aboutus">
@@ -26,11 +29,12 @@
     </div>
   </div>
 
-  <div class="meamo-aboutus__sides">
+  <div class="meamo-aboutus__sides meamo-aboutus__fancy-txt">
     <div class="meamo-aboutus__side meamo-aboutus__side-img">
-      <img src="{$urls.theme_assets}/img/shallow-focus-photography-of-assorted-color-clothes-hanged-1078958.jpg" alt="">
+      <img src="{$urls.theme_assets}/img/o7w3mbyn4b5y324b56wn4b56wm4u.jpg" alt="">
     </div>
     <div class="meamo-aboutus__side meamo-aboutus__side-txt">
+      <p class="meamo-aboutus__txt">&nbsp;</p>
       <h3 class="meamo-title-normal">{l s='Block 2 title' d='Shop.Theme.Aboutus'}</h3>
       <p class="meamo-aboutus__txt">{l s='Block 2 txt' d='Shop.Theme.Aboutus'}</p>
     </div>

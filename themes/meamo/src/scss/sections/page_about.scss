@@ -1,7 +1,12 @@
+.cms-id-4 .meamo-newsletter {
+  display: none;
+}
+
 .meamo-aboutus {
   &__sides {
     display: flex;
   }
+
   &__side-txt {
     display: flex;
     flex-direction: column;
@@ -9,6 +14,7 @@
     align-items: center;
     text-align: center;
   }
+
   &__quote {
     // background-image: url('/themes/meamo/assets/img/meamo-quote.png');
     background-position: left top;
@@ -32,12 +38,33 @@
       width: 100%;
     }
   }
+
+  &__fancy-txt {
+    position: relative;
+    overflow: hidden;
+    &::before {
+      font-family: $font_fancy;
+      color: $color_meamo_black;
+      position: absolute;
+      left: 0;
+      right: 0;
+      text-align: right;
+      white-space: nowrap;
+      pointer-events: none;
+    }
+  }
+
   &__more-link {
   }
+
   &__bottom-quote {
     p {
       max-width: 800px;
     }
+  }
+
+  &__button {
+    margin-bottom: 3rem;
   }
 
 @media (max-width: 767px) {
@@ -51,6 +78,12 @@
   }
   &__side-txt {
     padding: 1rem;
+  }
+  &__fancy-txt::before {
+    font-size: 110px;
+    top: 2rem;
+    right: -1rem;
+    color: white;
   }
 } //media
 @media (min-width: 1024px) {
@@ -70,5 +103,15 @@
   &__side-txt {
     padding: 3rem;
   }
+  &__fancy-txt::before {
+    font-size: 190px;
+    top: 4rem;
+  }
 } //media
+@media (min-width: 1440px) {
+  &__fancy-txt::before {
+    font-size: 350px;
+    top: 6rem;
+  }
+}//media
 } //.meamo-aboutus
