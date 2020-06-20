@@ -31,12 +31,19 @@ p {
     line-height: 1.7em;
 }
 
-.meamo-title-normal {
+@mixin meamo-title-normal {
   text-transform: uppercase;
   margin-bottom: 1em;
-  font-weight: $font_default_weight;
+  font-weight: $font_default_weight_bold;
   font-size: 1.6rem;
+  @media (min-width: 1024px) {
+    font-size: 2rem;
+  }
+  @media (min-width: 1440px) {
+    font-size: 3rem;
+  }
 }
+.meamo-title-normal { @include meamo-title-normal; }
 
 .meamo-wrapper {
   width: 100%;

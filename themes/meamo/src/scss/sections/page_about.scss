@@ -41,7 +41,6 @@
 
   &__fancy-txt {
     position: relative;
-    overflow: hidden;
     &::before {
       font-family: $font_fancy;
       color: $color_meamo_black;
@@ -77,6 +76,9 @@
   }
   &__side-txt {
     padding: 1rem;
+  }
+  &__fancy-txt {
+    overflow: hidden;
   }
   &__fancy-txt::before {
     font-size: 110px;
