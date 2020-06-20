@@ -1,7 +1,11 @@
+.cms-id-7 .meamo-newsletter {
+  display: none;
+}
+
 .meamo-contact {
-  text-align: center;
 
   &__contact-section {
+    text-align: center;
     background: $background_about;
     position: relative;
     overflow: hidden;
@@ -29,14 +33,37 @@
     margin-bottom: 3rem;
   }
   &__email {
-    font-size: 2rem;
+    font-size: 1.6rem;
     margin-bottom: 0;
   }
   &__phone {
-    font-size: 2rem;
+    font-size: 1.6rem;
     margin-bottom: 3rem;
   }
   &__adress {
+  }
+
+  &__form-section {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    max-width: 800px;
+    .form-control-label {
+      text-align: left;
+      font-family: $font_default;
+      color: $color_meamo_gray;
+    }
+    .form-control {
+      background-color: #fff;
+      border-color: $color_meamo_black;
+      border-width: 2px;
+    }
+    .input-group-btn,
+    .btn-default {
+      background-color: $color_hover_link;
+    }
+    input[type="submit"]:hover {
+      background-color: $color_hover_link;
+    }
   }
 @media (max-width: 767px) {
 } //media
@@ -60,6 +87,12 @@
       top: 10rem;
     }
   }
+  &__email {
+    font-size: 2rem;
+  }
+  &__phone {
+    font-size: 2rem;
+  }
 } //media
 @media (min-width: 1440px) {
   &__contact-section {
@@ -70,3 +103,7 @@
   }
 }//media
 } //.meamo-contact
+
+.form-control:focus, .input-group.focus {
+    outline-color: $color_hover_link;
+}

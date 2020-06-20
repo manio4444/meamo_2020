@@ -22,7 +22,7 @@
  * @license   https://opensource.org/licenses/AFL-3.0 Academic Free License 3.0 (AFL-3.0)
  * International Registered Trademark & Property of PrestaShop SA
  *}
-<section class="contact-form">
+<div class="meamo-contact__form-section meamo-wrapper">
   <form action="{$urls.pages.contact}" method="post" {if $contact.allow_file_upload}enctype="multipart/form-data"{/if}>
 
     {if $notifications}
@@ -38,15 +38,15 @@
     {if !$notifications || $notifications.nw_error}
       <section class="form-fields">
 
-        <div class="form-group row">
-          <div class="col-md-9 col-md-offset-3">
-            <h3>{l s='Contact us' d='Shop.Theme.Global'}</h3>
+        {* <div class="form-group row">
+          <div class="col-xs-12">
+            <h3 class="meamo-title-normal text-xs-center">{l s='Contact us' d='Shop.Theme.Global'}</h3>
           </div>
-        </div>
+        </div> *}
 
         <div class="form-group row">
-          <label class="col-md-3 form-control-label">{l s='Subject' d='Shop.Forms.Labels'}</label>
-          <div class="col-md-6">
+          <label class="col-xs-12 form-control-label">{l s='Subject' d='Shop.Forms.Labels'}</label>
+          <div class="col-xs-12">
             <select name="id_contact" class="form-control form-control-select">
               {foreach from=$contact.contacts item=contact_elt}
                 <option value="{$contact_elt.id_contact}">{$contact_elt.name}</option>
@@ -56,8 +56,8 @@
         </div>
 
         <div class="form-group row">
-          <label class="col-md-3 form-control-label">{l s='Email address' d='Shop.Forms.Labels'}</label>
-          <div class="col-md-6">
+          <label class="col-xs-12 form-control-label">{l s='Email address' d='Shop.Forms.Labels'}</label>
+          <div class="col-xs-12">
             <input
               class="form-control"
               name="from"
@@ -70,8 +70,8 @@
 
         {if $contact.orders}
           <div class="form-group row">
-            <label class="col-md-3 form-control-label">{l s='Order reference' d='Shop.Forms.Labels'}</label>
-            <div class="col-md-6">
+            <label class="col-xs-12 form-control-label">{l s='Order reference' d='Shop.Forms.Labels'} ({l s='optional' d='Shop.Forms.Help'})</label>
+            <div class="col-xs-12">
               <select name="id_order" class="form-control form-control-select">
                 <option value="">{l s='Select reference' d='Shop.Forms.Help'}</option>
                 {foreach from=$contact.orders item=order}
@@ -79,27 +79,21 @@
                 {/foreach}
               </select>
             </div>
-            <span class="col-md-3 form-control-comment">
-              {l s='optional' d='Shop.Forms.Help'}
-            </span>
           </div>
         {/if}
 
         {if $contact.allow_file_upload}
           <div class="form-group row">
-            <label class="col-md-3 form-control-label">{l s='Attachment' d='Shop.Forms.Labels'}</label>
-            <div class="col-md-6">
+            <label class="col-xs-12 form-control-label">{l s='Attachment' d='Shop.Forms.Labels'} ({l s='optional' d='Shop.Forms.Help'})</label>
+            <div class="col-xs-12" style="overflow: hidden;">
               <input type="file" name="fileUpload" class="filestyle" data-buttonText="{l s='Choose file' d='Shop.Theme.Actions'}">
             </div>
-            <span class="col-md-3 form-control-comment">
-              {l s='optional' d='Shop.Forms.Help'}
-            </span>
           </div>
         {/if}
 
         <div class="form-group row">
-          <label class="col-md-3 form-control-label">{l s='Message' d='Shop.Forms.Labels'}</label>
-          <div class="col-md-9">
+          <label class="col-xs-12 form-control-label">{l s='Message' d='Shop.Forms.Labels'}</label>
+          <div class="col-xs-12">
             <textarea
               class="form-control"
               name="message"
@@ -111,7 +105,7 @@
 
         {if isset($id_module)}
           <div class="form-group row">
-            <div class="offset-md-3">
+            <div class="col-xs-12">
               {hook h='displayGDPRConsent' id_module=$id_module}
             </div>
           </div>
@@ -119,7 +113,7 @@
 
       </section>
 
-      <footer class="form-footer text-sm-right">
+      <footer class="form-footer text-xs-center">
         <style>
           input[name=url] {
             display: none !important;
@@ -132,4 +126,4 @@
     {/if}
 
   </form>
-</section>
+</div>
