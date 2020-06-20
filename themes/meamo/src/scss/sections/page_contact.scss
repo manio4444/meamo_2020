@@ -1,0 +1,72 @@
+.meamo-contact {
+  text-align: center;
+
+  &__contact-section {
+    background: $background_about;
+    position: relative;
+    overflow: hidden;
+    color: $color_about_text;
+    &::before {
+      font-family: $font_fancy;
+      color: white;
+      position: absolute;
+      left: 0;
+      right: 0;
+      text-align: center;
+      white-space: nowrap;
+      pointer-events: none;
+    }
+  }
+  &__title {
+  }
+  p {
+    font-family: serif;
+  }
+  &__txt {
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 3rem;
+  }
+  &__email {
+    font-size: 2rem;
+    margin-bottom: 0;
+  }
+  &__phone {
+    font-size: 2rem;
+    margin-bottom: 3rem;
+  }
+  &__adress {
+  }
+@media (max-width: 767px) {
+} //media
+@media (min-width: 768px) {
+} //media
+@media (max-width: 1023px) {
+  &__contact-section {
+    padding: 6rem 1rem 2.5rem;
+    &::before {
+      font-size: 110px;
+      top: 4rem;
+      right: -1rem;
+    }
+  }
+} //media
+@media (min-width: 1024px) {
+  &__contact-section {
+    padding: 14rem 4rem 10rem;
+    &::before {
+      font-size: 190px;
+      top: 10rem;
+    }
+  }
+} //media
+@media (min-width: 1440px) {
+  &__contact-section {
+    &::before {
+      font-size: 250px;
+      top: 9rem;
+    }
+  }
+}//media
+} //.meamo-contact

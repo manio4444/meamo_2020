@@ -6,6 +6,8 @@
 {block name="content_wrapper"}
   {if $cms.id == 4} {* about us *}
     {include file='cms/custom/aboutus.tpl'}
+  {else if $cms.id == 7} {* contact *}
+    {include file='cms/custom/contact.tpl'}
   {else}
   {block name="content"}
     <p>Hello world! This is HTML5 Boilerplate.</p>
