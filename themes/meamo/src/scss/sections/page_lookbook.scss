@@ -3,12 +3,73 @@
 }
 
 .meamo-lookbook {
+  display: flex;
+  flex-wrap: wrap;
+  &__text-section {
+    order: 0;
+    flex-basis: 100%;
+    margin: 3rem 1rem;
+    text-align: center;
+  }
+  &__title {
+    margin-bottom: 3rem;
+  }
+  &__subtitle {
+    // background-image: url('/themes/meamo/assets/img/meamo-quote.png');
+    background-position: left top;
+    background-repeat: no-repeat;
+    background-size: auto 15px;
+    font-family: serif;
+    font-style: italic;
+    font-weight: bold;
+    font-size: 2.5rem;
+    line-height: 2.4rem;
+    margin-bottom: 2rem;
+  }
+  &__text {
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  &__image-section {
+    flex-basis: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    img {
+      width: 100%;
+      height: auto;
+    }
+    &.counter-1 {
+      order: -2;
+    }
+    &.counter-2 {
+      order: -1;
+    }
+    &.padding {
+      padding: 5rem 3rem;
+    }
+  }
+  &__button {
+    order: 9999;
+    flex-grow: 1;
+    margin: 5rem 0;
+  }
 
 @media (max-width: 767px) {
 } //media
 @media (min-width: 768px) {
 } //media
 @media (max-width: 1023px) {
+  &__image-section {
+    flex-basis: 100%;
+    &.padding {
+      padding: 0;
+    }
+  }
+  &__button {
+    margin: 3rem 0;
+  }
 } //media
 @media (min-width: 1024px) {
 } //media
