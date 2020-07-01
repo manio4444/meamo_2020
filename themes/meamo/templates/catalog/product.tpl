@@ -49,11 +49,11 @@
 
 {block name='content'}
 
-  <section id="main" itemscope itemtype="https://schema.org/Product">
+  <section id="main" class="meamo-product" itemscope itemtype="https://schema.org/Product">
     <meta itemprop="url" content="{$product.url}">
 
-    <div class="row">
-      <div class="col-md-6">
+    <div class="meamo-product__row meamo-wrapper">
+      <div class="meamo-product__images">
         {block name='page_content_container'}
           <section class="page-content" id="content">
             {block name='page_content'}
@@ -78,10 +78,11 @@
           </section>
         {/block}
         </div>
-        <div class="col-md-6">
+
+        <div class="meamo-product__description">
           {block name='page_header_container'}
             {block name='page_header'}
-              <h1 class="h1" itemprop="name">{block name='page_title'}{$product.name}{/block}</h1>
+              <h1 class="meamo-title-normal" itemprop="name">{block name='page_title'}{$product.name}{/block}</h1>
             {/block}
           {/block}
           {block name='product_prices'}
@@ -90,7 +91,13 @@
 
           <div class="product-information">
             {block name='product_description_short'}
-              <div id="product-description-short-{$product.id}" itemprop="description">{$product.description_short nofilter}</div>
+            <div
+              id="product-description-short-{$product.id}"
+              class="meamo-product__description-txt"
+              itemprop="description
+            ">
+            {$product.description_short nofilter}
+          </div>
             {/block}
 
             {if $product.is_customizable && count($product.customizations.fields)}
@@ -226,7 +233,7 @@
                    {$extra.content nofilter}
                  </div>
                  {/foreach}
-              </div>  
+              </div>
             </div>
           {/block}
         </div>

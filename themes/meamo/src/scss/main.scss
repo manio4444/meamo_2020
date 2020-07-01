@@ -1,5 +1,10 @@
-// node_modules
+/*
+* import directly from node_modules START
+* If importing .css files, don't use extension (remoce '.css' at end)
+*/
 @import 'slick-carousel/slick/slick.scss';
+@import 'semantic-ui-dropdown/dropdown.min';
+@import 'semantic-ui-transition/transition.min';
 // node_modules END
 
 @import 'base/font_face';
@@ -29,6 +34,7 @@
 @import 'sections/homepage_slider';
 @import 'sections/homepage_about';
 @import 'sections/homepage_shop';
+@import 'sections/page_product';
 @import 'sections/page_about';
 @import 'sections/page_lookbook';
 @import 'sections/page_contact';
