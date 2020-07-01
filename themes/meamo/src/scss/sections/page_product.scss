@@ -1,7 +1,12 @@
 .page-product .meamo-newsletter {
   display: none;
 }
+#blockcart-modal .product-name {
+  //modal after buy button click
+  color: $color_hover_link;
+}
 
+// ####### meamo-product ##########
 .meamo-product {
 
   &__row {

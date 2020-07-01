@@ -27,31 +27,27 @@
     {hook h='displayFooterBefore'}
   {/block}
 </div>
-<div class="footer-container meamo-footer">
-  <div class="container">
-    <div class="row">
+<div class="meamo-footer">
+  <div class="meamo-wrapper">
+    <div class="meamo-footer__row-hook_footer">
       {block name='hook_footer'}
         {hook h='displayFooter'}
       {/block}
     </div>
-    <div class="row">
+    <div class="meamo-footer__row-hook_footer_after">
       {block name='hook_footer_after'}
         {hook h='displayFooterAfter'}
       {/block}
     </div>
-    <div class="row">
-      <div class="col-md-12">
-        <p>
-          {l s='Projekt i realizacja' d='Shop.Theme.Footer'} -
-          <a class="_blank" href="#" target="_blank" rel="nofollow">
-            <strong>Clou.Studio</strong>
-          </a>
-        </p>
-      </div>
-      <div class="row">
-        <div class="col-md-12">
-          <img class="logo img-responsive" src="{$shop.logo}" alt="{$shop.name}">
-        </div>
+    <div class="meamo-footer__row-realization">
+      <span>
+        {l s='Projekt i realizacja' d='Shop.Theme.Footer'} -
+        <a class="_blank" href="#" target="_blank" rel="nofollow">
+          <strong>Clou.Studio</strong>
+        </a>
+      </span>
+      <div class="meamo-footer__logo">
+        <img class="logo img-responsive" src="{$shop.logo}" alt="{$shop.name}">
       </div>
     </div>
   </div>

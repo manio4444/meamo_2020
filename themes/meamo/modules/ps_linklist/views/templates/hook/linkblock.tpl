@@ -22,11 +22,14 @@
  * @license   https://opensource.org/licenses/AFL-3.0 Academic Free License 3.0 (AFL-3.0)
  * International Registered Trademark & Property of PrestaShop SA
  *}
-<div class="col-md-6 links">
-  <div class="row">
+<div class="meamo-footer__links">
+  <span class="meamo-footer__copy-info">
+    {l s='© 2020 All rights reserved. Registered in Poland' d='Shop.Theme.Shop.Theme.Footer'}
+  </span>
+
   {foreach $linkBlocks as $linkBlock}
-    <div class="col-md-6 wrapper">
-      <p class="h3 hidden-sm-down">{$linkBlock.title}</p>
+    <div class="meamo-footer__links-block">
+      {* <p class="h3 hidden-sm-down">{$linkBlock.title}</p>
       {assign var=_expand_id value=10|mt_rand:100000}
       <div class="title clearfix hidden-md-up" data-target="#footer_sub_menu_{$_expand_id}" data-toggle="collapse">
         <span class="h3">{$linkBlock.title}</span>
@@ -36,8 +39,10 @@
             <i class="material-icons remove">&#xE316;</i>
           </span>
         </span>
-      </div>
-      <ul id="footer_sub_menu_{$_expand_id}" class="collapse">
+      </div> *}
+
+      {* <ul id="footer_sub_menu_{$_expand_id}" class="collapse"> *}
+      <ul class="meamo-footer__links-list">
         {foreach $linkBlock.links as $link}
           <li>
             <a
@@ -54,5 +59,4 @@
       </ul>
     </div>
   {/foreach}
-  </div>
 </div>
