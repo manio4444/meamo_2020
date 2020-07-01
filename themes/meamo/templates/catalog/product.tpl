@@ -55,7 +55,7 @@
     <div class="meamo-product__row meamo-wrapper">
       <div class="meamo-product__images">
         {block name='page_content_container'}
-          <section class="page-content" id="content">
+          <section class="images-content">
             {block name='page_content'}
               <!-- @todo: use include file='catalog/_partials/product-flags.tpl'} -->
               {block name='product_flags'}
@@ -96,8 +96,8 @@
               class="meamo-product__description-txt"
               itemprop="description
             ">
-            {$product.description_short nofilter}
-          </div>
+              {$product.description_short nofilter}
+            </div>
             {/block}
 
             {if $product.is_customizable && count($product.customizations.fields)}
