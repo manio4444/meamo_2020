@@ -18,6 +18,7 @@
   "homepage": "https://github.com/manio4444/meamo_2020#readme",
   "dependencies": {
     "jquery": "^3.5.1",
+    "jquery-zoom": "^1.7.21",
     "semantic-ui-css": "^2.4.1",
     "semantic-ui-dropdown": "^2.4.1",
     "semantic-ui-transition": "^2.3.1",
