@@ -256,8 +256,18 @@
     {/block}
 
     {block name='product_footer'}
-      {hook h='displayFooterProduct' product=$product category=$category}
+      <div class="meamo-wrapper">
+        {hook h='displayFooterProduct' product=$product category=$category}
+      </div>
     {/block}
+
+    <div class="meamo-wrapper">
+      <div class="text-xs-center">
+        <a class="meamo-button meamo-products-list__home-button" href="{$urls.base_url}">
+          {l s='Go to homepage' d='Shop.Theme.Homepage'}
+        </a>
+      </div>
+    </div>
 
     {block name='product_images_modal'}
       {include file='catalog/_partials/product-images-modal.tpl'}

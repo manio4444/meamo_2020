@@ -119,6 +119,20 @@
     color: #fff;
   }
 
+  &__bestsellers-list {
+    position: relative;
+    &::before {
+      font-family: $font_fancy;
+      color: $color_meamo_black;
+      position: absolute;
+      left: 0;
+      right: 0;
+      white-space: nowrap;
+      pointer-events: none;
+      z-index: 1;
+    }
+  }
+
   .social-sharing {
     display: none;
   }
@@ -138,12 +152,22 @@
 @media (max-width: 1023px) {
   &__images {
     margin-bottom: 3rem;
+    margin-left: -$padding_wrapper;
+    margin-right: -$padding_wrapper;
+    width: calc(100% + #{$padding_wrapper} * 2);
   }
   &__slider-big {
     width: 100%;
   }
   &__slider-small {
     display: none;
+  }
+  &__bestsellers-list {
+    padding: 4rem 0 1rem;
+    &::before {
+      font-size: 109px;
+      top: 2rem;
+    }
   }
 } //media
 @media (min-width: 1024px) {
@@ -153,7 +177,21 @@
   &__description {
     width: 50%;
   }
+  &__bestsellers-list {
+    padding: 7rem 0 1rem;
+    &::before {
+      font-size: 190px;
+      top: 4rem;
+    }
+  }
 } //media
 @media (min-width: 1440px) {
+  &__bestsellers-list {
+    padding: 18rem 0 1rem;
+    &::before {
+      font-size: 350px;
+      top: 11rem;
+    }
+  }
 }//media
 } //.meamo-product
