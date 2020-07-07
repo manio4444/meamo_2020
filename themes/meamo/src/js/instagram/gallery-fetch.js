@@ -2,7 +2,9 @@ import $ from 'jquery';
 window.$ = $;
 window.jQuery = $;
 
-import Instafeed from 'instafeed.js';
+// Because of some ES6 modules error problems, instafeed
+// is loaded from CDN in <script> on bottom of <body>
+// import Instafeed from 'instafeed.js';
 
 const sliderConfig = {
   variableWidth: true,
@@ -21,7 +23,6 @@ $(document).ready(function() {
 
   if ($constinstagramSlider.length === 0) {
     return;
-    console.log('##################### return ###################');
   }
 
   $.ajax({
@@ -29,8 +30,7 @@ $(document).ready(function() {
     url: `https://graph.instagram.com/${instagramUserId}/media`,
     data: {
       access_token: instagramAccessToken,
-      fields: 'media_url,permalink',
-      size: 'm'
+      fields: 'media_url,permalink'
     }
   })
   .done(function(data) {
@@ -42,7 +42,6 @@ $(document).ready(function() {
       .appendTo($constinstagramSlider);
     });
 
-console.log($constinstagramSlider.find('img'));
     $constinstagramSlider.find('img').each(function() {
       $(this)
       .wrap('<li>')
