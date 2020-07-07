@@ -8,5 +8,6 @@ import './lookbook/position-pictures';
 import './product/semantic-select.js';
 import './product/product-sliders.js';
 import './product/product-zoom.js';
+import './product/sizes-modal.js';
 
 import './instagram/gallery-fetch.js';

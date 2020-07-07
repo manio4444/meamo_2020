@@ -5,6 +5,8 @@
 @import 'slick-carousel/slick/slick.scss';
 @import 'semantic-ui-dropdown/dropdown.min';
 @import 'semantic-ui-transition/transition.min';
+@import 'semantic-ui-dimmer/dimmer.min';
+@import 'semantic-ui-modal/modal.min';
 // node_modules END
 
 @import 'base/font_face';
@@ -31,6 +33,7 @@
 @import 'modules/mobile_overlay';
 @import 'modules/meamo-button';
 @import 'modules/spinner';
+@import 'modules/meamo_additional_info';
 
 @import 'sections/header';
 
