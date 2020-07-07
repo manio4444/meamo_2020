@@ -268,10 +268,6 @@
         </a>
       </div>
     </div>
-    
-    {block name='instagram_section'}
-    {include file='catalog/_partials/instagram-section.tpl'}
-    {/block}
 
     {block name='product_images_modal'}
       {include file='catalog/_partials/product-images-modal.tpl'}

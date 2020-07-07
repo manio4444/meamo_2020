@@ -27,6 +27,11 @@
     {hook h='displayFooterBefore'}
   {/block}
 </div>
+
+{block name='instagram_section'}
+  {include file='catalog/_partials/instagram-section.tpl'}
+{/block}
+
 <div class="meamo-footer">
   <div class="meamo-wrapper">
     <div class="meamo-footer__row-hook_footer">
