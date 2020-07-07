@@ -101,6 +101,12 @@
     margin-top: 0;
   }
 
+  .color-selector {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
   .product-quantity .qty {
     display: none;
   }

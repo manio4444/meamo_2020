@@ -38,7 +38,7 @@
           {/foreach}
         </select>
       {elseif $group.group_type == 'color'}
-        <ul id="group_{$id_attribute_group}">
+        <ul id="group_{$id_attribute_group}" class="color-selector">
           {foreach from=$group.attributes key=id_attribute item=group_attribute}
             <li class="float-xs-left input-container">
               <label>
