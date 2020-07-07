@@ -16,8 +16,8 @@ const sliderConfig = {
 $(document).ready(function() {
 
   const $constinstagramSlider = $('.section-instagram #instafeed');
-  const instagramUserId = '17841400647940820';
-  const instagramAccessToken = 'IGQVJWcHIzSUpZAZADZAFd3BNOEx3R0ZA2ajhFNENSTUx4dVNzd0FZAeEUxWU1yR08tcTBfeURIVEN6aFNYNU04TEJvdXV4X3FhRlRvSFUxLU1UMm5iNmUzS0JjVXBEV1lkQ1pMVHVLQXFYQ0NUaWVTT0pIaQZDZD';
+  const instagramUserId = '17841433231003838';
+  const instagramAccessToken = 'IGQVJYVGxMMjFrV2ltSW1oUjJKSnhwVnZAfMFF2VWl1VFhUYXY5dVRjQ0I2WlZAUbXFnZAEx2eGFvamNZAYkhfQzJFNjlGVU5adFI2R1Y4YnVXS3pJamRKN19BMmU4SzVzU1FnTVlLNG9ldTVoano1VVN2LQZDZD';
 
   if ($constinstagramSlider.length === 0) {
     return;
