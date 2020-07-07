@@ -31,6 +31,7 @@
     &__right-item {
       display: flex;
       justify-content: center;
+      align-items: center;
       a {
         display: flex;
         align-items: center;
@@ -39,6 +40,10 @@
         // margin-top: 1rem;
       }
     }
+  }
+
+  #_desktop_user_info {
+    margin-bottom: 1rem;
   }
 
   &__close {

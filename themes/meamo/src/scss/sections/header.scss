@@ -75,6 +75,12 @@
 
 }
 
+.header-search {
+  &__icon {
+    cursor: pointer;
+  }
+}
+
 .shopping-cart {
   a {
     display: flex;
@@ -120,6 +126,9 @@
 @media (min-width: 1024px) {
   .header-navigation {
     &__mobile {
+      display: none !important;
+    }
+    .for-mobile-overlay {
       display: none !important;
     }
     &__right-item {

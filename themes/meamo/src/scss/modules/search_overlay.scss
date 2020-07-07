@@ -1,0 +1,67 @@
+.search-overlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 4; // must be bigger than mobile menu
+  background-color: $base_color_background;
+  transition: .2s ease;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 1.5rem;
+  line-height: 2.2rem;
+
+
+  &:not(.is-active) {
+    opacity: 0;
+    pointer-events: none;
+  }
+
+  &__input {
+    width: 100%;
+    max-width: 500px;
+    color: $color_meamo_black;
+    border: none;
+    border-bottom: 2px solid $color_meamo_black;
+    background-color: transparent;
+    display: inline-block;
+    font-size: 1rem;
+    line-height: 1.25em;
+    padding: 1em .3em;
+  }
+
+  &__submit {
+  }
+
+  &__close {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    font-size: 60px;
+  }
+
+@media (max-width: 767px) {
+  flex-direction: column;
+  &__input {
+    margin-bottom: 1rem;
+    width: calc(100% - 1rem);
+  }
+  &__submit {
+  }
+} //media
+@media (min-width: 768px) {
+  &__input {
+    margin-right: 1rem;
+  }
+  &__submit {
+  }
+} //media
+@media (max-width: 1023px) {
+} //media
+@media (min-width: 1024px) {
+} //media
+} //.search-overlay

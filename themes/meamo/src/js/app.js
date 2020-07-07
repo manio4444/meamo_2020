@@ -1,4 +1,5 @@
 import './header/menu-mobile.js';
+import './header/search-overlay.js';
 
 import './home/home-slider';
 import './home/home-products-slider';
