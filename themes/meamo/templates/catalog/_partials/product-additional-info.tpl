@@ -24,12 +24,12 @@
  *}
 <div class="product-additional-info">
   <div class="meamo-additional-info__icons">
-    <a class="meamo-additional-info__icon" href="{$link->getCategoryLink(1)|escape:'html':'UTF-8'}" target="_blank">
+    <a class="meamo-additional-info__icon" href="{url entity='cms' id=1}" target="_blank">
       <img src="{$urls.theme_assets}/img/icon-delivery.png" alt="">
       <span>{l s='Shipment 1-3 days' d='Shop.Theme.ProductPage'}</span>
     </a>
 
-    <a class="meamo-additional-info__icon" href="{$link->getCategoryLink(5)|escape:'html':'UTF-8'}" target="_blank">
+    <a class="meamo-additional-info__icon" href="{url entity='cms' id=5}" target="_blank">
       <img src="{$urls.theme_assets}/img/icon-return.png" alt="">
       <span>{l s='Return 14 days' d='Shop.Theme.ProductPage'}</span>
     </a>
