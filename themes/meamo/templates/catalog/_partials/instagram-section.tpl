@@ -14,7 +14,7 @@
 
   <div class="meamo-title-normal section-instagram__title">
     {l s='Follow us on instagram' d='Shop.Theme.Instagram'}
-    <a href="#">@meamoofficial</a>
+    <a href="https://www.instagram.com/meamoofficial/" target="_blank">@meamoofficial</a>
   </div>
 
 </section>

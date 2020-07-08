@@ -33,3 +33,4 @@
 {/foreach}
 
 <link href="https://fonts.googleapis.com/css?family=Lato:300,400,500&amp;subset=latin-ext" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap" rel="stylesheet">

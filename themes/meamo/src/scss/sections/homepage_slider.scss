@@ -30,6 +30,8 @@
 
   &__title {
     font-family: $font_bigtitle;
+    font-weight: $font_bigtitle_weight;
+    text-transform: uppercase;
   }
   &__sub {
     font-family: $font_fancy;

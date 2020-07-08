@@ -4,7 +4,7 @@
   &__title {
     text-transform: uppercase;
     font-family: $font_bigtitle;
-    font-weight: 600;
+    font-weight: $font_bigtitle_weight;
     position: absolute;
     top: 0;
     bottom: 0;

@@ -30,7 +30,7 @@
         href="{$logout_url}"
         rel="nofollow"
       >
-        <i class="material-icons">&#xE7FF;</i>
+        {* <i class="material-icons">&#xE7FF;</i> *}
         {l s='Sign out' d='Shop.Theme.Actions'}
       </a>
       <a
