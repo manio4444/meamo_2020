@@ -34,7 +34,8 @@
 } //.meamo-products-list
 
 .meamo-products-list-top {
-  margin: 3rem 0;
+  // margin: 3rem 0;
+  display: none;
   &__total-products {
     text-align: center;
     font-family: serif;
