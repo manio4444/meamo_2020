@@ -47,7 +47,7 @@
     <div class="meamo-footer__row-realization">
       <span>
         {l s='Projekt i realizacja' d='Shop.Theme.Footer'} -
-        <a class="_blank" href="#" target="_blank" rel="nofollow">
+        <a class="_blank" href="https://www.facebook.com/clou.studioo/" target="_blank" rel="nofollow">
           <strong>Clou.Studio</strong>
         </a>
       </span>
