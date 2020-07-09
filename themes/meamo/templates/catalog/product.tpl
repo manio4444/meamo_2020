@@ -96,7 +96,7 @@
               class="meamo-product__description-txt"
               itemprop="description
             ">
-              {$product.description_short nofilter}
+              {$product.description nofilter}
             </div>
             {/block}
 
