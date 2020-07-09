@@ -43,39 +43,13 @@
   <div class="ui modal meamo-additional-info__sizing-modal">
     <i class="close material-icons">close</i>
     <div class="header">
-      Tabela rozmiarów  </div>
-      <div class="content">
-        <table class="ui celled table page_shop_sizing">
-          <thead>
-            <tr>
-              <th>Polski rozmiar</th>
-              <th>Biust w cm</th>
-              <th>Talia w cm</th>
-              <th>Biodra w cm</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>34</td><td>88</td><td>72</td><td>98</td>
-            </tr>
-            <tr>
-              <td>36</td><td>92</td><td>76</td><td>102</td>
-            </tr>
-            <tr>
-              <td>38</td><td>96</td><td>80</td><td>106</td>
-            </tr>
-            <tr>
-              <td>40</td><td>100</td><td>84</td><td>110</td>
-            </tr>
-            <tr>
-              <td>42</td><td>106</td><td>90</td><td>116</td>
-            </tr>
-            <tr>
-              <td>44</td><td>112</td><td>96</td><td>122</td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
+      {l s='Size table' d='Shop.Theme.SizesTable'}
+    </div>
+    <div class="content">
+      <div class="meamo-additional-info__table-data">{l s='Tabela rozmiarów, nowa linia nowy wiersz, średnik nowa kolumna' d='Shop.Theme.SizesTable'}</div>
+      <table class="ui celled table page_shop_sizing">
+      </table>
+    </div>
     </div>
 
   {hook h='displayProductAdditionalInfo' product=$product}
