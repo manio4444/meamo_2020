@@ -68,7 +68,9 @@
 
   &__description-txt {
     font-family: serif;
-    padding: 2rem 0;
+    max-width: 550px;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .ui.selection.dropdown {
@@ -168,6 +170,9 @@
   &__slider-small {
     display: none;
   }
+  &__description-txt {
+    padding: 2rem 1rem;
+  }
   &__bestsellers-list {
     padding: 4rem 0 1rem;
     &::before {
@@ -182,6 +187,9 @@
   &__images,
   &__description {
     width: 50%;
+  }
+  &__description-txt {
+    padding: 2rem 2rem;
   }
   &__bestsellers-list {
     padding: 7rem 0 1rem;
