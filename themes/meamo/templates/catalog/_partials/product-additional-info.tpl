@@ -26,27 +26,27 @@
   <div class="meamo-additional-info__icons">
     <a class="meamo-additional-info__icon" href="{url entity='cms' id=1}" target="_blank">
       <img src="{$urls.theme_assets}/img/icon-delivery.png" alt="">
-      <span>{l s='Shipment 1-3 days' d='Shop.Theme.ProductPage'}</span>
+      <span>{l s='Shipment 1-3 days' d='Shop.Theme.Product_page'}</span>
     </a>
 
     <a class="meamo-additional-info__icon" href="{url entity='cms' id=5}" target="_blank">
       <img src="{$urls.theme_assets}/img/icon-return.png" alt="">
-      <span>{l s='Return 14 days' d='Shop.Theme.ProductPage'}</span>
+      <span>{l s='Return 14 days' d='Shop.Theme.Product_page'}</span>
     </a>
 
     <a class="meamo-additional-info__icon" href="#" data-sizes-modal>
       <img src="{$urls.theme_assets}/img/icon-sizes.png" alt="">
-      <span>{l s='Sizes info' d='Shop.Theme.ProductPage'}</span>
+      <span>{l s='Sizes info' d='Shop.Theme.Product_page'}</span>
     </a>
   </div>
 
   <div class="ui modal meamo-additional-info__sizing-modal">
     <i class="close material-icons">close</i>
     <div class="header">
-      {l s='Size table' d='Shop.Theme.SizesTable'}
+      {l s='Size table' d='Shop.Theme.Sizes_table'}
     </div>
     <div class="content">
-      <div class="meamo-additional-info__table-data">{l s='Tabela rozmiarów, nowa linia nowy wiersz, średnik nowa kolumna' d='Shop.Theme.SizesTable'}</div>
+      <div class="meamo-additional-info__table-data">{l s='Tabela rozmiarów, nowa linia nowy wiersz, średnik nowa kolumna' d='Shop.Theme.Sizes_table'}</div>
       <table class="ui celled table page_shop_sizing">
       </table>
     </div>

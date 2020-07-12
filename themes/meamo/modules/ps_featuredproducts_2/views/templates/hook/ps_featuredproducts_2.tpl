@@ -1,6 +1,6 @@
 <style media="screen">
 .meamo-product__bestsellers-list::before {
-  content: '{l s='bestsellers' d='Shop.Theme.ProductPage'}';
+  content: '{l s='bestsellers' d='Shop.Theme.Product_page'}';
 }
 </style>
 
