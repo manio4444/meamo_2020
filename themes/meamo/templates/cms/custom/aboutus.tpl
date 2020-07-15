@@ -31,7 +31,7 @@
 
   <div class="meamo-aboutus__sides meamo-aboutus__fancy-txt">
     <div class="meamo-aboutus__side meamo-aboutus__side-img">
-      <img src="{$urls.theme_assets}/img/o7w3mbyn4b5y324b56wn4b56wm4u.jpg" alt="">
+      <img src="{$urls.theme_assets}/img/solazul_01.png" alt="">
     </div>
     <div class="meamo-aboutus__side meamo-aboutus__side-txt">
       <p class="meamo-aboutus__txt">&nbsp;</p>
