@@ -38,7 +38,7 @@
         title="{l s='View my customer account' d='Shop.Theme.Customeraccount'}"
         rel="nofollow"
       >
-        <i class="material-icons  logged">&#xE7FF;</i>
+        <i class="material-icons logged">&#xE7FF;</i>
         <span class="for-mobile-overlay">{$customerName}</span>
       </a>
     {else}

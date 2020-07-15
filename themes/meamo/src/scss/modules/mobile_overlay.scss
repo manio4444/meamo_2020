@@ -35,7 +35,7 @@
     &__right-item {
       display: flex;
       justify-content: center;
-      i {
+      i.material-icons {
         margin-bottom: -3px;
       }
     }
@@ -43,6 +43,11 @@
       flex-direction: column;
       align-items: center;
       margin-bottom: 1rem;
+    }
+    &__social {
+    }
+    &__social-icon {
+      margin-right: .5rem;
     }
   }
 
