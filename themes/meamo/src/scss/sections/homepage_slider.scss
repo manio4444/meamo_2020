@@ -28,6 +28,10 @@
     text-align: center;
   }
 
+  a:hover {
+    color: inherit;
+  }
+
   &__title {
     font-family: $font_bigtitle;
     font-weight: $font_bigtitle_weight;
@@ -35,6 +39,8 @@
   }
   &__sub {
     font-family: $font_fancy;
+    font-weight: bold;
+    line-height: 0.5em;
   }
 
 @media (max-width: 767px) {
