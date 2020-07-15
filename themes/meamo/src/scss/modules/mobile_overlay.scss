@@ -16,13 +16,17 @@
   font-size: 1.5rem;
   line-height: 2.2rem;
 
-
   &:not(.is-active) {
     opacity: 0;
     pointer-events: none;
   }
 
   .header-mainmenu {
+    ul {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
     &__element {
     }
   }
@@ -31,19 +35,15 @@
     &__right-item {
       display: flex;
       justify-content: center;
-      align-items: center;
-      a {
-        display: flex;
-        align-items: center;
-      }
-      &:not(:last-child) {
-        // margin-top: 1rem;
+      i {
+        margin-bottom: -3px;
       }
     }
-  }
-
-  #_desktop_user_info {
-    margin-bottom: 1rem;
+    &__user-info {
+      flex-direction: column;
+      align-items: center;
+      margin-bottom: 1rem;
+    }
   }
 
   &__close {

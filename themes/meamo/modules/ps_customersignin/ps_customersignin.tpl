@@ -22,11 +22,10 @@
  * @license   https://opensource.org/licenses/AFL-3.0 Academic Free License 3.0 (AFL-3.0)
  * International Registered Trademark & Property of PrestaShop SA
  *}
-<div id="_desktop_user_info" class="header-navigation__right-item">
-  <div class="user-info">
+<div class="header-navigation__user-info header-navigation__right-item">
     {if $logged}
       <a
-        class="logout hidden-sm-down"
+        class="logout header-navigation__right-item"
         href="{$logout_url}"
         rel="nofollow"
       >
@@ -34,13 +33,13 @@
         {l s='Sign out' d='Shop.Theme.Actions'}
       </a>
       <a
-        class="account"
+        class="account header-navigation__right-item"
         href="{$my_account_url}"
         title="{l s='View my customer account' d='Shop.Theme.Customeraccount'}"
         rel="nofollow"
       >
         <i class="material-icons  logged">&#xE7FF;</i>
-        <span class="">{$customerName}</span>
+        <span class="for-mobile-overlay">{$customerName}</span>
       </a>
     {else}
       <a
@@ -51,5 +50,4 @@
         <span class="">{l s='Sign in' d='Shop.Theme.Actions'}</span>
       </a>
     {/if}
-  </div>
 </div>

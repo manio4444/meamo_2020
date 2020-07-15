@@ -20,7 +20,7 @@
       {if $cart.products_count > 0}{/if}
         <a rel="nofollow" href="{$cart_url}">
           <i class="material-icons shopping-cart">shopping_cart</i>
-          {* <span class="hidden-sm-down">{l s='Cart' d='Shop.Theme.Checkout'}</span> *}
+          <span class="for-mobile-overlay">{l s='Cart' d='Shop.Theme.Checkout'}</span>
           <span class="cart-products-count">({$cart.products_count})</span>
         </a>
     </div>

@@ -26,9 +26,8 @@
 <div class="header-search header-navigation__right-item" data-search-controller-url="{$search_controller_url}">
 
 	<a href="#" data-search-overlay>
-		<span class="for-mobile-overlay">{l s='Search' d='Shop.Theme.Catalog'}</span>
-		&nbsp;&nbsp;
 		<i class="material-icons search header-search__icon">&#xE8B6;</i>
+		<span class="for-mobile-overlay">{l s='Search' d='Shop.Theme.Catalog'}</span>
 	</a>
 	<form method="get" action="{$search_controller_url}" class="search-overlay">
 		<i class="material-icons search-overlay__close" data-search-overlay>close</i>
