@@ -24,11 +24,24 @@
  *}
 
 {block name='block_social'}
-  <div class="block-social col-lg-4 col-md-12 col-sm-12">
+  {* <div class="block-social">
     <ul>
       {foreach from=$social_links item='social_link'}
         <li class="{$social_link.class}"><a href="{$social_link.url}" target="_blank">{$social_link.label}</a></li>
       {/foreach}
     </ul>
+  </div> *}
+  <div class="header-navigation__social header-navigation__right-item">
+  	<a href="{$social_links.facebook.url}">
+  		<i class="header-navigation__social-icon header-navigation__social-icon--facebook"></i>
+  		<span class="for-mobile-overlay">Facebook</span>
+  	</a>
+  </div>
+
+  <div class="header-navigation__social header-navigation__right-item">
+  	<a href="{$social_links.instagram.url}">
+  		<i class="header-navigation__social-icon header-navigation__social-icon--instagram"></i>
+  		<span class="for-mobile-overlay">Instagram</span>
+  	</a>
   </div>
 {/block}

@@ -58,6 +58,7 @@ global_settings:
       displayNav1:
         - ps_mainmenu
         - ps_customersignin
+        - ps_socialfollow
         - ps_searchbar
         - ps_shoppingcart
         # - ps_wishlist TODO:
@@ -71,6 +72,7 @@ global_settings:
       displayMobile1:
         - ps_mainmenu
         - ps_customersignin
+        - ps_socialfollow
         - ps_searchbar
         - ps_shoppingcart
         # - ps_wishlist TODO:

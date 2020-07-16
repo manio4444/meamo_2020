@@ -1,17 +1,3 @@
-<div class="header-navigation__social header-navigation__right-item">
-	<a href="#">
-		<i class="header-navigation__social-icon header-navigation__social-icon--facebook"></i>
-		<span class="for-mobile-overlay">Facebook</span>
-	</a>
-</div>
-
-<div class="header-navigation__social header-navigation__right-item">
-	<a href="#">
-		<i class="header-navigation__social-icon header-navigation__social-icon--instagram"></i>
-		<span class="for-mobile-overlay">Instagram</span>
-	</a>
-</div>
-
 <div class="header-search header-navigation__right-item" data-search-controller-url="{$search_controller_url}">
 
 	<a href="#" data-search-overlay>
