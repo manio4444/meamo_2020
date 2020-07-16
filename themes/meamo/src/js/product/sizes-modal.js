@@ -10,10 +10,15 @@ $(document).ready(function() {
 
   const $modalInvoker = $('[data-sizes-modal]');
   const $modalContent = $('.meamo-additional-info__sizing-modal');
-  const $tableData = $('.meamo-additional-info__table-data');
+  const $tableDataDefault = $('.meamo-additional-info__table-data');
+  const $tableDataCustom = $('.meamo-additional-info__table-data-custom');
 
+  const $tableData = !$.trim($tableDataCustom.html()) ? $tableDataDefault : $tableDataCustom;
   const tableLines = $tableData.text().split("\n");
 
+console.log($tableDataCustom.html());
+console.log($.trim($tableDataCustom.html()));
+console.log(!$.trim($tableDataCustom.html()));
   tableLines.forEach(item => {
     const $line = $('<tr></tr>');
 
@@ -23,7 +28,8 @@ $(document).ready(function() {
 
     $modalContent.find('table').append($line);
 
-    $tableData.remove();
+    $tableDataDefault.remove();
+    $tableDataCustom.remove();
   });
 
   // console.log($tableData.text());

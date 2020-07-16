@@ -47,6 +47,7 @@
     </div>
     <div class="content">
       <div class="meamo-additional-info__table-data">{l s='Tabela rozmiarów, nowa linia nowy wiersz, średnik nowa kolumna' d='Shop.Theme.Sizes_table'}</div>
+      <div class="meamo-additional-info__table-data-custom">{$product.description_short|strip_tags:false}</div>
       <table class="ui celled table page_shop_sizing">
       </table>
     </div>
