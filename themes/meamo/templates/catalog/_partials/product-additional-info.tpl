@@ -23,6 +23,9 @@
  * International Registered Trademark & Property of PrestaShop SA
  *}
 <div class="product-additional-info">
+
+  {hook h='displayProductAdditionalInfo' product=$product}
+
   <div class="meamo-additional-info__icons">
     <a class="meamo-additional-info__icon" href="{url entity='cms' id=1}" target="_blank">
       <img src="{$urls.theme_assets}/img/icon-delivery.png" alt="">
@@ -51,7 +54,6 @@
       <table class="ui celled table page_shop_sizing">
       </table>
     </div>
-    </div>
+  </div>
 
-  {hook h='displayProductAdditionalInfo' product=$product}
 </div>

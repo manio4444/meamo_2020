@@ -1,0 +1,20 @@
+.available-mailalert {
+
+  display: flex;
+  justify-content: center;
+  margin: 1rem 1rem 3rem;
+  &__content {
+    max-width: 550px;
+  }
+  .btn {
+    white-space: normal;
+  }
+@media (max-width: 767px) {
+} //media
+@media (min-width: 768px) {
+} //media
+@media (max-width: 1023px) {
+} //media
+@media (min-width: 1024px) {
+} //media
+} //.available-mailalert

@@ -3,4 +3,7 @@
   background-color: transparent;
   border: 2px solid $color_meamo_black;
   box-shadow: none;
+  &:hover {
+    background-color: $color_hover_link;
+  }
 }

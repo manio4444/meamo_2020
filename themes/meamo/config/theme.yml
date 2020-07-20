@@ -101,7 +101,8 @@ global_settings:
       displaySearch:
         - ps_searchbar
       displayProductAdditionalInfo:
-        - ps_sharebuttons
+        # - ps_sharebuttons
+        - ps_emailalerts
       displayFooterProduct:
         - ps_featuredproducts_2
       displayReassurance:
