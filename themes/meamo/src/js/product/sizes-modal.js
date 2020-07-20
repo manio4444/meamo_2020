@@ -16,9 +16,6 @@ $(document).ready(function() {
   const $tableData = !$.trim($tableDataCustom.html()) ? $tableDataDefault : $tableDataCustom;
   const tableLines = $tableData.text().split("\n");
 
-console.log($tableDataCustom.html());
-console.log($.trim($tableDataCustom.html()));
-console.log(!$.trim($tableDataCustom.html()));
   tableLines.forEach(item => {
     const $line = $('<tr></tr>');
 
@@ -31,9 +28,6 @@ console.log(!$.trim($tableDataCustom.html()));
     $tableDataDefault.remove();
     $tableDataCustom.remove();
   });
-
-  // console.log($tableData.text());
-  // console.log(tableLines);
 
   $modalInvoker.click(e => {
     e.preventDefault();
