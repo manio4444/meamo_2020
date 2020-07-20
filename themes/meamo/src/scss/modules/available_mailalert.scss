@@ -1,8 +1,11 @@
 .available-mailalert {
-
   display: flex;
   justify-content: center;
   margin: 1rem 1rem 3rem;
+
+  box-shadow: none;
+  background: transparent;
+  padding: 0;
   &__content {
     max-width: 550px;
   }

@@ -1,4 +1,4 @@
-<div class="available-mailalert">
+<div class="tabs available-mailalert">
     <form>
         <div class="js-mailalert available-mailalert__content" data-url="{url entity='module' name='ps_emailalerts' controller='actions' params=['process' => 'add']}">
             {if isset($email) AND $email}
