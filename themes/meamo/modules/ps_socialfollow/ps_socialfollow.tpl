@@ -31,17 +31,21 @@
       {/foreach}
     </ul>
   </div> *}
+  {if 'facebook'|array_key_exists:$social_links}
   <div class="header-navigation__social header-navigation__right-item">
   	<a href="{$social_links.facebook.url}">
   		<i class="header-navigation__social-icon header-navigation__social-icon--facebook"></i>
   		<span class="for-mobile-overlay">Facebook</span>
   	</a>
   </div>
+  {/if}
 
+  {if 'instagram'|array_key_exists:$social_links}
   <div class="header-navigation__social header-navigation__right-item">
   	<a href="{$social_links.instagram.url}">
   		<i class="header-navigation__social-icon header-navigation__social-icon--instagram"></i>
   		<span class="for-mobile-overlay">Instagram</span>
   	</a>
   </div>
+  {/if}
 {/block}
