@@ -1,0 +1,18 @@
+[data-product-zoom] {
+  // https://codepen.io/galulex/pen/eNZRVq
+  @media (hover: none) {
+    background-image: none !important;
+  }
+  @media (hover: hover) {
+    background-size: 200% auto;
+    background-position: 50% 50%;
+    overflow: hidden;
+    cursor: zoom-in;
+    & img:hover {
+      opacity: 0;
+    }
+    img {
+      transition: opacity .5s;
+    }
+  }
+}

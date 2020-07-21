@@ -27,8 +27,8 @@
   <div class="meamo-product__slider-big">
     <ul>
       {foreach from=$product.images item=image}
-      <li class="meamo-product__slider-big-element">
-        <img class="" src="{$image.bySize.large_default.url}" alt="" title="" itemprop="image">
+      <li class="meamo-product__slider-big-element" data-product-zoom style="background-image: url('{$image.bySize.large_default.url}')">
+        <img id="meamo-product__slider-big-element-img" src="{$image.bySize.large_default.url}" alt="" title="" itemprop="image">
       </li>
       {/foreach}
     </ul>
@@ -40,7 +40,7 @@
     <ul>
       {foreach from=$product.images item=image}
       <li class="meamo-product__slider-small-element">
-        <img class="" src="{$image.bySize.large_default.url}" alt="" title="" itemprop="image">
+        <img id="meamo-product__slider-small-element-img" src="{$image.bySize.large_default.url}" alt="" title="" itemprop="image">
       </li>
       {/foreach}
     </ul>
