@@ -9,4 +9,11 @@ $(document).ready(function() {
 
   $('.ui.dropdown').dropdown();
 
+  // prestashop is reRendering some blocks when products combinatins are updated
+  prestashop.on('updatedProduct',function() {
+    console.log('dropdown');
+    $('.ui.dropdown').dropdown();
+});
+
+
 });

@@ -52,7 +52,7 @@
   <section id="main" class="meamo-product" itemscope itemtype="https://schema.org/Product">
     <meta itemprop="url" content="{$product.url}">
 
-    <div class="meamo-product__row meamo-wrapper">
+    <div class="meamo-product__row meamo-wrapper row">
       <div class="meamo-product__images">
         {block name='page_content_container'}
           <section class="images-content">
