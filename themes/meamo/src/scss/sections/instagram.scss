@@ -5,6 +5,7 @@
   &__title {
     text-transform: uppercase;
     text-align: center;
+    margin-top: 5rem;
     a {
       color: $color_hover_link;
     }
@@ -13,11 +14,10 @@
     display: block;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 3rem;
   }
 
-  #instafeed:not(.slick-initialized) > * {
-    display: none;
+  #instafeed {
+    margin: 0;
   }
 
   #instafeed.slick-initialized + &__spinner {
@@ -31,7 +31,6 @@
 @media (max-width: 1023px) {
   padding: 3rem 0;
   #instafeed {
-    margin-bottom: 3rem;
     img {
       width: 180px;
     }
@@ -39,8 +38,5 @@
 } //media
 @media (min-width: 1024px) {
   padding: 4rem 0;
-  #instafeed {
-    margin-bottom: 5rem;
-  }
 } //media
 } //.section-instagram
