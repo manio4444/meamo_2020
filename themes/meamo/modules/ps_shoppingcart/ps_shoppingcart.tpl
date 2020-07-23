@@ -1,12 +1,8 @@
 <div class="wishlist-icon header-navigation__right-item">
-  <div class="">
-    <div class="header">
-      <a rel="nofollow" href="">
-        <i class="material-icons favorite">favorite</i>
-        <span class="cart-products-count">(0)</span>
-      </a>
-    </div>
-  </div>
+  <a rel="nofollow" href="{$link->getCMSLink(8)}">
+    <i class="material-icons favorite">favorite</i>
+    <span data-wishlist-count class="wishlist-icon__count">(0)</span>
+  </a>
 </div>
 <!-- temp here up -->
 
