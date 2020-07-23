@@ -21,6 +21,8 @@
 
 .meamo-products-list {
   .products {
+    display: flex;
+    flex-wrap: wrap;
     justify-content: space-between !important;
     .meamo-productbox {
       border-bottom: 1px solid $color_border_header;

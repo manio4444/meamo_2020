@@ -10,6 +10,8 @@
     {include file='cms/custom/contact.tpl'}
   {else if $cms.id == 6} {* lookbook *}
     {include file='cms/custom/lookbook.tpl'}
+  {else if $cms.id == 8} {* wishlist *}
+    {include file='cms/custom/wishlist.tpl'}
   {else}
   {block name="content"}
     <p>Hello world! This is HTML5 Boilerplate.</p>

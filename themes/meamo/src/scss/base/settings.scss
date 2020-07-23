@@ -52,3 +52,26 @@ p {
   padding-left: $padding_wrapper;
   padding-right: $padding_wrapper;
 }
+
+.meamo-section {
+  &--padding {
+    @media (max-width: 1023px) {
+      padding-top: 3rem;
+      padding-bottom: 3rem;
+    } //media
+    @media (min-width: 1024px) {
+      padding-top: 4rem;
+      padding-bottom: 4rem;
+    } //media
+  }
+  &--margin {
+    @media (max-width: 1023px) {
+      margin-top: 3rem;
+      margin-bottom: 3rem;
+    } //media
+    @media (min-width: 1024px) {
+      margin-top: 4rem;
+      margin-bottom: 4rem;
+    } //media
+  }
+}

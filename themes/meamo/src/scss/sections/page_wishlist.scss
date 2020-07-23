@@ -1,0 +1,23 @@
+.cms-id-8 .meamo-newsletter {
+  display: none;
+}
+
+.meamo-wishlist {
+
+  [data-wishlist-list]:not(.ready) {
+    & > * {
+      display: none;
+    }
+  }
+
+@media (max-width: 767px) {
+} //media
+@media (min-width: 768px) {
+} //media
+@media (max-width: 1023px) {
+} //media
+@media (min-width: 1024px) {
+} //media
+@media (min-width: 1440px) {
+}//media
+} //.meamo-wishlist
