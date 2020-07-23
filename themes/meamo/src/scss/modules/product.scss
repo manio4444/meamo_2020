@@ -37,13 +37,15 @@
     opacity: 0;
     transition: .2s ease;
   }
+@media (hover: hover) {
+  &:hover &__image-hover {
+    opacity: 1;
+  }
+} //media
 @media (max-width: 767px) {
   width: 300px;
 } //media
 @media (min-width: 768px) {
-  &:hover &__image-hover {
-    opacity: 1;
-  }
 } //media
 @media (max-width: 1023px) {
 } //media
