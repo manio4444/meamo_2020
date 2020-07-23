@@ -11,4 +11,8 @@ import './product/product-sliders';
 import './product/product-zoom';
 import './product/sizes-modal';
 
+import './wishlist/counter-icon';
+import './wishlist/page-render';
+import './wishlist/toggle-button';
+
 import './instagram/gallery-fetch';

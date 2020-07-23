@@ -33,6 +33,10 @@
       {/foreach}
     </ul>
 </div>
+
+{if $product.cover}
+  <div data-wishlist-cover="{$product.cover.bySize.home_default.url}" style="display: none;"></div>
+{/if}
   {/block}
 
   {block name='product_images'}

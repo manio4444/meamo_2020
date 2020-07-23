@@ -69,10 +69,10 @@
               {block name='product_cover_thumbnails'}
                 {include file='catalog/_partials/product-cover-thumbnails.tpl'}
               {/block}
-              <div class="scroll-box-arrows">
+              {* <div class="scroll-box-arrows">
                 <i class="material-icons left">&#xE314;</i>
                 <i class="material-icons right">&#xE315;</i>
-              </div>
+              </div> *}
 
             {/block}
           </section>
@@ -82,7 +82,10 @@
         <div class="meamo-product__description">
           {block name='page_header_container'}
             {block name='page_header'}
-              <h1 class="meamo-title-normal" itemprop="name">{block name='page_title'}{$product.name}{/block}</h1>
+              <h1 class="meamo-title-normal meamo-product__title" itemprop="name">
+                {block name='page_title'}{$product.name}{/block}
+                <i class="material-icons" data-wishlist-toggle data-wishlist-name="{$product.name}">favorite_border</i>
+              </h1>
             {/block}
           {/block}
           {block name='product_prices'}
@@ -108,7 +111,7 @@
 
             <div class="product-actions">
               {block name='product_buy'}
-                <form action="{$urls.pages.cart}" method="post" id="add-to-cart-or-refresh">
+                <form action="{$urls.pages.cart}" method="post" id="add-to-cart-or-refresh" data-wishlist-product-form>
                   <input type="hidden" name="token" value="{$static_token}">
                   <input type="hidden" name="id_product" value="{$product.id}" id="product_page_product_id">
                   <input type="hidden" name="id_customization" value="{$product.id_customization}" id="product_customization_id">

@@ -10,6 +10,15 @@
     }
   }
 
+  [data-wishlist-button-cart] {
+    margin: 1rem .5rem;
+    flex-grow: 1;
+  }
+
+  [data-wishlist-button-delete] i {
+    margin: 0;
+  }
+
 @media (max-width: 767px) {
 } //media
 @media (min-width: 768px) {

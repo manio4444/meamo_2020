@@ -25,5 +25,16 @@
       <div class="products" data-wishlist-list></div>
     </div>
 
+    <div data-wishlist-empty-buttons style="display: none;">
+      <button class="btn-primary" data-wishlist-button-cart>
+        <i class="material-icons shopping-cart">&#xE547;</i>
+        {l s='Add to cart' d='Shop.Theme.Actions'}
+      </button>
+
+      <button class="btn-primary" data-wishlist-button-delete>
+        <i class="material-icons delete">delete</i>
+      </button>
+    </div>
+
   </div>
 </section>
