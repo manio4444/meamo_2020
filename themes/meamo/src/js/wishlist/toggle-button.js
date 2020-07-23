@@ -56,14 +56,17 @@ $(document).ready(function() {
 
   if (ExistsWishlist(id_product)) {
     $wishlistAddInvoker.text('favorite');
+    $wishlistAddInvoker.addClass('active');
   }
 
   $wishlistAddInvoker.click(function () {
     if ($wishlistAddInvoker.text() === 'favorite_border') {
+      $wishlistAddInvoker.addClass('active');
       $wishlistAddInvoker.text('favorite');
       AddToWishlist();
     } else {
       $wishlistAddInvoker.text('favorite_border');
+      $wishlistAddInvoker.removeClass('active');
       DeleteFromWishlist();
     }
 
