@@ -64,12 +64,13 @@ $(document).ready(function() {
       $wishlistAddInvoker.addClass('active');
       $wishlistAddInvoker.text('favorite');
       AddToWishlist();
+      UpdateWishlistCount(true);
     } else {
       $wishlistAddInvoker.text('favorite_border');
       $wishlistAddInvoker.removeClass('active');
       DeleteFromWishlist();
+      UpdateWishlistCount();
     }
 
-    UpdateWishlistCount();
   });
 });

@@ -94,6 +94,11 @@
 }
 
 .wishlist-icon {
+  i.active {
+    animation-name: OnceBigger;
+    animation-duration: .6s;
+    animation-iteration-count: 1;
+  }
 }
 
 .currency-selector,
@@ -183,5 +188,16 @@
       }
     }
   }
-
 } //media
+
+@keyframes OnceBigger {
+	0% {
+		// transform: scale(1);
+	}
+	50% {
+		transform: scale(4);
+	}
+	100% {
+		transform: scale(1);
+	}
+}
