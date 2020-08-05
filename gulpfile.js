@@ -50,8 +50,8 @@ const CONFIG = {
       `${THEME_FOLDER}/src/js/**/*.js`
     ],
     TEMPLATES: [
-      `${THEME_FOLDER}/templates/**/*.tpl`,
-      `${THEME_FOLDER}/modules/**/*.tpl`
+      // `${THEME_FOLDER}/templates/**/*.tpl`,
+      `${THEME_FOLDER}/**/*.tpl`
     ],
     THEME: [
       `${THEME_FOLDER}/**/*`
