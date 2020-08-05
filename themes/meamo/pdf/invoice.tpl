@@ -100,12 +100,19 @@
 		</td>
 	</tr>
 
-	<!-- Hook -->
-	{if isset($HOOK_DISPLAY_PDF)}
-	<tr>
+  <tr>
 		<td colspan="12" height="30">&nbsp;</td>
 	</tr>
 
+  <tr>
+		<td colspan="12">
+      <br><span class="bold">SPRZEDAWCA ZWOLNIONY PODMIOTOWO Z PODATKU OD TOWARÓW I USŁUG</span>
+      <br><span>dostawa towarów lub świadczenie usług zwolnione na podstawie art. 113 ust. 1 (albo ust. 9) ustawy z dnia 11 marca 2004r. o podatku od towarów i usług (Dz. U. z 2011r. Nr 177, poz. 1054, z późn. zm.)</span>
+    </td>
+	</tr>
+
+	<!-- Hook -->
+	{if isset($HOOK_DISPLAY_PDF)}
 	<tr>
 		<td colspan="2">&nbsp;</td>
 		<td colspan="10">
