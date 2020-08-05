@@ -11,7 +11,10 @@ export const UpdateWishlistCount = (animation = false) => {
 
   wishlistCount.text(`(${countWishlist})`);
   if (animation === true && countWishlist > 0) {
-    wishlistIcon.addClass('active');
+    wishlistIcon.removeClass('active');
+    setTimeout(() => {
+      wishlistIcon.addClass('active');
+    }, 0); // setTimeout wrap for prevent effect that class toggle is not seen (some JS engine stuff)
   } else {
     wishlistIcon.removeClass('active');
   }
