@@ -1,5 +1,11 @@
 # meamo_2020
 
+## Set up
+
+* prestashop_1.7.6.5
+* node v12 preferred
+* gulp cli (just run gulp)
+* theme assets only in repo, needs running pre set prestashop, which gulp is pushing files on change (watcher)
 
 ## Troubleshooting
 
