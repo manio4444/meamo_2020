@@ -16,7 +16,7 @@
 
   <div class="meamo-aboutus__sides reverse-desktop">
     <div class="meamo-aboutus__side meamo-aboutus__side-img">
-      <img src="{$urls.theme_assets}/img/shallow-focus-photography-of-assorted-color-clothes-hanged-1078958.jpg" alt="">
+      <!-- place for img (src/js/aboutus/position-pictures.js) -->
     </div>
     <div class="meamo-aboutus__side meamo-aboutus__side-txt">
       <p class="meamo-aboutus__quote">{l s='Block 1 quote' d='Shop.Theme.Aboutus'}</p>
@@ -31,7 +31,7 @@
 
   <div class="meamo-aboutus__sides meamo-aboutus__fancy-txt">
     <div class="meamo-aboutus__side meamo-aboutus__side-img">
-      <img src="{$urls.theme_assets}/img/solazul_01.png" alt="">
+      <!-- place for img (src/js/aboutus/position-pictures.js) -->
     </div>
     <div class="meamo-aboutus__side meamo-aboutus__side-txt">
       <p class="meamo-aboutus__txt">&nbsp;</p>
@@ -42,6 +42,12 @@
 
   <div class="meamo-aboutus__bottom-quote meamo-aboutus__side-txt">
     <p class="meamo-aboutus__quote">{l s='Block 3 quote' d='Shop.Theme.Aboutus'}</p>
+  </div>
+
+  <div class="meamo-aboutus__pictures-temp">
+    {block name="content"}
+    <p>Hello world! This is HTML5 Boilerplate.</p>
+    {/block}
   </div>
 
   <div class="text-xs-center">

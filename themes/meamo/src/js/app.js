@@ -4,6 +4,8 @@ import './header/search-overlay';
 import './home/home-slider';
 import './home/home-products-slider';
 
+import './aboutus/position-pictures';
+
 import './lookbook/position-pictures';
 
 import './product/semantic-select';
