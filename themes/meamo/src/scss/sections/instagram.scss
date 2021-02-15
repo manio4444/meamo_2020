@@ -18,6 +18,9 @@
 
   #instafeed {
     margin: 0;
+    img {
+      max-width: 320px;
+    }
   }
 
   #instafeed.slick-initialized + &__spinner {

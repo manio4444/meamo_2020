@@ -19,7 +19,7 @@ $(document).ready(function() {
 
   const $constinstagramSlider = $('.section-instagram #instafeed');
   const instagramUserId = '17841433231003838';
-  const instagramAccessToken = 'IGQVJYVGxMMjFrV2ltSW1oUjJKSnhwVnZAfMFF2VWl1VFhUYXY5dVRjQ0I2WlZAUbXFnZAEx2eGFvamNZAYkhfQzJFNjlGVU5adFI2R1Y4YnVXS3pJamRKN19BMmU4SzVzU1FnTVlLNG9ldTVoano1VVN2LQZDZD';
+  const instagramAccessToken = 'IGQVJWLWltUmkyQlZAIaXlvZAU1NZAjJQTU1lWDJ3dkRZAeHN3QUFQTDZAYNmtHbWtsTmtCT0dEZA014VHNZAaEZAxc2U5MTJ2c0FQYkJNU25SRWc4RVBKN3h0RjY1N3lWVHkycy1yYzZAvdW5BNnNxemN1eGJsVgZDZD';
 
   if ($constinstagramSlider.length === 0) {
     return;
@@ -34,11 +34,11 @@ $(document).ready(function() {
     }
   })
   .done(function(data) {
-    const images = data.data.map(item => item.permalink);
+    const images = data.data.map(item => item.media_url);
 
     images.forEach(imageUrl => {
       $('<img>')
-      .attr('src', `${imageUrl}media/?size=m`)
+      .attr('src', imageUrl)
       .appendTo($constinstagramSlider);
     });
 
