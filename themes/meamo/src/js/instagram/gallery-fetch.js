@@ -19,7 +19,7 @@ $(document).ready(function() {
 
   const $constinstagramSlider = $('.section-instagram #instafeed');
   const instagramUserId = '17841433231003838';
-  const instagramAccessToken = 'IGQVJWLWltUmkyQlZAIaXlvZAU1NZAjJQTU1lWDJ3dkRZAeHN3QUFQTDZAYNmtHbWtsTmtCT0dEZA014VHNZAaEZAxc2U5MTJ2c0FQYkJNU25SRWc4RVBKN3h0RjY1N3lWVHkycy1yYzZAvdW5BNnNxemN1eGJsVgZDZD';
+  const instagramAccessToken = 'IGQVJYOS1KSGVHZAmZAfMWZAVaHpzUlA3UG11cWhkRVFXRlRDQjNRQ2RCQ3gxNXBPTURhNDVBbG5mWGpvNDhiLXg4NWx0VHJzYXpkMEdvdHdRT3RXRzdJRTNsemx6T19NWDlKY1A1cVdBMVdiZATVjTEVnbAZDZD';
 
   if ($constinstagramSlider.length === 0) {
     return;
